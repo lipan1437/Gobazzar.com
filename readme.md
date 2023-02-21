@@ -10,8 +10,8 @@
 
 
 ## WORK 
- HOME PAGE - Ritik 
- NAVBAR and single Page - Sejal
- LOGIN/SIGNUP - Md Arif
- PRODUCT PAGE - Bhirav 
+ HOME PAGE - Ritik,
+ NAVBAR and single Page - Sejal,
+ LOGIN/SIGNUP - Md Arif,
+ PRODUCT PAGE - Bhirav, 
  PRODUCT DETAILS PAGE - Lipan
