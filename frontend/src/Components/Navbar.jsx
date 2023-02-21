@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import gobazaar from '../gobazaar.png'
 import {BiShoppingBag} from 'react-icons/bi'
+import {BsSearch} from 'react-icons/bs'
 import {VscDesktopDownload} from 'react-icons/vsc'
 import {MdOutlineLocalOffer} from 'react-icons/md'
 import {IoStorefrontOutline,IoChatbubblesSharp} from 'react-icons/io5'
@@ -10,7 +11,7 @@ import {BsCart} from 'react-icons/bs'
 import {GiHamburgerMenu} from 'react-icons/gi'
 
 import {ChevronDownIcon} from '@chakra-ui/icons'
-import {Select,option} from '@chakra-ui/react'
+import {Select,InputGroup,InputRightAddon,Input} from '@chakra-ui/react'
 
 
 export default function Navbar() {
@@ -70,7 +71,12 @@ export default function Navbar() {
                    <div className='navbar2221'>
                     <Location location ="All Categories" data = {data} />
                    </div>
-                   <div></div>
+                   <div className='navbar2222'>
+                   <InputGroup size='sm'>
+                        <Input placeholder='Search in All India' variant='unstyled' />
+                         <InputRightAddon children={<BsSearch />} bg='#008BCF'color={'white'} />
+                    </InputGroup>
+                   </div>
                    <div></div>
                 </div>
             </div>

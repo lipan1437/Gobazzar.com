@@ -1,5 +1,6 @@
 #navbar{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #333333;
 }
 .navbar1{
     width : 95%;
@@ -74,28 +75,38 @@
     height: 100%;
 }
 .navbar22{
-    border: 1px solid black;
     width: 45%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1px;
 }
 .navbar221{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70%;
-    width: 20%;
+    width: 17%;
 }
 .navbar222{
     width: 80%;
     height: 70%;
-    border: 1px solid blue;
+    border: 1px solid #008BCF;
+    display: flex;
 }
 .navbar2221{
     width: 30%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+}
+
+.navbar2222{
+    width: 71%;
+    padding: 0px 0px 0px 5px;
 }
 @media only screen and (min-width : 551px) and (max-width : 768px){
 
