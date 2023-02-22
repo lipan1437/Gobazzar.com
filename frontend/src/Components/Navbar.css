@@ -146,13 +146,48 @@
     display: none;
 }
 .navbar3{
-    width : 95%;
-    height: 8vh;
-    margin: auto;
     display: flex;
     justify-content: space-between;
+    width : 95%;
+    height: 9vh;
+    margin: auto;
+    border-bottom: 1px solid #333333;
+}
+.navbar3>div{
+    display: flex;
+    padding: 0px 5px 0px 5px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar3>div:hover{
+    background-color: #008BCF;
+    color: white;
+}
+.navbar3_h{
+    display: flex;
+    width: 93%;
+    margin: auto;
+    height: 350px;
 }
 
+.navbar3_h>div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.navbar3_h>div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.navbar3_h p{
+    display: flex;
+}
+.navbar3_hp{
+    font-weight: bold;
+    color: black;
+}
 @media only screen and (max-width :1100px){
     .navbar1{
         display: none;

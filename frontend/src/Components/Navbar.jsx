@@ -6,13 +6,14 @@ import {BsSearch} from 'react-icons/bs'
 import {VscDesktopDownload} from 'react-icons/vsc'
 import {MdOutlineLocalOffer} from 'react-icons/md'
 import {IoStorefrontOutline,IoChatbubblesSharp} from 'react-icons/io5'
+import {IoMdArrowDropright} from 'react-icons/io'
 import {HiOutlineCurrencyRupee} from 'react-icons/hi'
 import {BsCart} from 'react-icons/bs'
+
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {CgProfile} from 'react-icons/cg'
-
 import {ChevronDownIcon} from '@chakra-ui/icons'
-import {Select,InputGroup,InputRightAddon,InputLeftAddon,Input,Button,Divider} from '@chakra-ui/react'
+import {Select,InputGroup,InputRightAddon,InputLeftAddon,Input,Button,Divider, Center} from '@chakra-ui/react'
 
 
 export default function Navbar() {
@@ -99,8 +100,86 @@ export default function Navbar() {
             </InputGroup>
         </div>
         <div className='navbar3'>
-
+           <div>
+            <p>MOBILES <ChevronDownIcon /></p>
+           </div>
+           <div>
+            <p>FURNITURE & DECORE<ChevronDownIcon /></p>
+           </div>
+           <div>
+            <p>ELECTRONICS<ChevronDownIcon /></p>
+           </div>
+           <div>
+            <p>HOME APPLIANCES<ChevronDownIcon /></p>
+           </div>
+           <div>
+            <p>KIDS & TOYS<ChevronDownIcon /></p>
+           </div>
+           <div>
+            <p>SPORTS, HOBBIES & FASHION<ChevronDownIcon /></p>
+           </div>
         </div>
+        </div> 
+        <div className='navbar3_h'>
+            <div>
+            <div>
+               <p className='navbar3_hp'>Mobile Phones<Center><IoMdArrowDropright /></Center> </p>
+               <p>Used Mobiles</p>
+            </div>
+            <div>
+                <p className='navbar3_hp'>Top Models (Used) <Center><IoMdArrowDropright /></Center></p>
+                <p>Used Iphone 7</p>
+                <p>Used Iphone 6</p>
+                <p>Used Redmi Note 4</p>
+            </div>
+            </div>
+            <div>
+            <div>
+                <p className='navbar3_hp'>Top Brands (Used/New)<Center><IoMdArrowDropright /></Center></p>
+                <p>Samsung Mobiles</p>
+                <p>Iphones</p>
+                <p>Mi Mobiles</p>
+                <p>Motorola Phones</p>
+                <p>LG Phones</p>
+            </div>
+            <div>
+                <p className='navbar3_hp'>Shop By Choice <Center><IoMdArrowDropright /></Center></p>
+                <p>4G Ready</p>
+                <p>Selfie Phones</p>
+                <p>Great Battery Life</p>
+                <p>High RAM</p>
+            </div>
+            </div>
+            <div>
+                <div>
+                    <p className='navbar3_hp'>Tablets <Center><IoMdArrowDropright /></Center></p>
+                    <p>Android Tablets</p>
+                    <p>4G Tablets</p>
+                    <p>Apple Tablets</p>
+                </div>
+                <div>
+                    <p className='navbar3_hp'>Wearable Devices <Center><IoMdArrowDropright /></Center></p>
+                    <p>Smart Bands</p>
+                    <p>Smart Watches</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                <p className='navbar3_hp'>Mobile Accessories <Center><IoMdArrowDropright /></Center></p>
+                <p>Bluetooth/Headsets</p>
+                <p>Earphones</p>
+                <p>Memory Cards</p> 
+                </div>
+                <div>
+                    <p className='navbar3_hp'>Shop By Budget <Center><IoMdArrowDropright /></Center></p>
+                    <p>Below ?6,000</p>
+                    <p>?6,001 - ?10,000</p>
+                </div>
+                <div>
+                <p className='navbar3_hp'>All Mobiles & Tablets<Center><IoMdArrowDropright /></Center></p> 
+                </div>
+               
+            </div>
         </div>
     </div>
   )
@@ -118,3 +197,5 @@ function Location({location,data}) {
         </Select>
     )
 }
+ 
+
