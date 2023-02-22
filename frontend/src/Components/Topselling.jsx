@@ -107,7 +107,7 @@ const Topselling = () => {
               <h1>Find Mobile by Budget</h1>
             </div>
             <div className="inside-container1">
-              <div  className="buget">
+              <div className="buget">
                 <button>Below ₹ 6,000</button>
               </div>
               <div className="buget">
@@ -126,49 +126,56 @@ const Topselling = () => {
           </div>
         </div>
 
-
         <div className="choice">
-        <div>
-        <h1>Shop By Choice</h1>
+          <div>
+            <h1>Shop By Choice</h1>
+          </div>
+          <div className="choice_inside">
+            <div className="choice_in">
+              <img
+                src="https://teja8.kuikr.com/escrow/assets/image/category/mobile_tablet/mobiles_choice1.jpg"
+                alt="4g_ready"
+              />
+              <div className="choice_under">
+                <h3>4G ready</h3>
+                <button>Explore</button>
+              </div>
+            </div>
+
+            <div className="choice_in">
+              <img
+                src="https://teja8.kuikr.com/escrow/assets/image/category/mobile_tablet/mobiles_choice2.jpg"
+                alt="selfie"
+              />
+              <div className="choice_under">
+                <h3>Selfie phones</h3>
+                <button>Explore</button>
+              </div>
+            </div>
+
+            <div className="choice_in">
+              <img
+                src="https://teja8.kuikr.com/escrow/assets/image/category/mobile_tablet/mobiles_choice4.jpg"
+                alt="greate_battery"
+              />
+              <div className="choice_under">
+                <h3>Greate battery life</h3>
+                <button>Explore</button>
+              </div>
+            </div>
+
+            <div className="choice_in">
+              <img
+                src="https://teja8.kuikr.com/escrow/assets/image/category/mobile_tablet/mobiles_choice3.jpg"
+                alt="high_on_speed"
+              />
+              <div className="choice_under">
+                <h3>High on speed</h3>
+                <button>Explore</button>
+              </div>
+            </div>
+          </div>
         </div>
-      <div className="choice_inside">
-         <div className="choice_in" >
-          <img src="https://teja8.kuikr.com/escrow/assets/image/category/mobile_tablet/mobiles_choice1.jpg" alt="4g_ready" />
-         <div className="choice_under">
-          <h3>4G ready</h3>
-          <button>Explore</button>
-         </div>
-         </div>
-
-         <div className="choice_in" >
-          <img src="https://teja8.kuikr.com/escrow/assets/image/category/mobile_tablet/mobiles_choice2.jpg" alt="selfie" />
-         <div className="choice_under">
-          <h3>Selfie phones</h3>
-          <button>Explore</button>
-         </div>
-         </div>
-
-         <div className="choice_in" >
-          <img src="https://teja8.kuikr.com/escrow/assets/image/category/mobile_tablet/mobiles_choice4.jpg" alt="greate_battery" />
-         <div className="choice_under">
-          <h3>Greate battery life</h3>
-          <button>Explore</button>
-         </div>
-         </div>
-
-         <div className="choice_in" >
-          <img src="https://teja8.kuikr.com/escrow/assets/image/category/mobile_tablet/mobiles_choice3.jpg" alt="high_on_speed" />
-         <div className="choice_under">
-          <h3>High on speed</h3>
-          <button>Explore</button>
-         </div>
-         </div>
-
-      </div>
-    </div>
-
-
-
       </div>
     </div>
   );
