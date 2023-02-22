@@ -10,7 +10,9 @@ app.use(express.json())
 app.use(cors())
 
 
-
+app.get("/",(req,res)=>{
+    res.send("Main Page")
+})
 
 app.post("/register",async (req,res)=>{
     const userDetail=req.body
