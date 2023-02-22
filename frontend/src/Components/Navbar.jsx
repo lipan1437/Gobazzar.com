@@ -9,9 +9,10 @@ import {IoStorefrontOutline,IoChatbubblesSharp} from 'react-icons/io5'
 import {HiOutlineCurrencyRupee} from 'react-icons/hi'
 import {BsCart} from 'react-icons/bs'
 import {GiHamburgerMenu} from 'react-icons/gi'
+import {CgProfile} from 'react-icons/cg'
 
 import {ChevronDownIcon} from '@chakra-ui/icons'
-import {Select,InputGroup,InputRightAddon,Input} from '@chakra-ui/react'
+import {Select,InputGroup,InputRightAddon,InputLeftAddon,Input,Button,Divider} from '@chakra-ui/react'
 
 
 export default function Navbar() {
@@ -21,6 +22,7 @@ export default function Navbar() {
   const data = ["Cars & Bikes","Mobiles & Tablets","Electoronic & Applications","Real Estate",
     "Services","Jobs","Home & Lifestyle","Education & Training", "Pets & Pet Care",
     "Entertainment","Events","Matrimonial"]
+
   return (
     <div id='navbar'>
         <div  className='navbar'>
@@ -72,17 +74,33 @@ export default function Navbar() {
                     <Location location ="All Categories" data = {data} />
                    </div>
                    <div className='navbar2222'>
-                   <InputGroup size='sm'>
+                   <InputGroup size='sm' height={'100%'}>
                         <Input placeholder='Search in All India' variant='unstyled' />
                          <InputRightAddon children={<BsSearch />} bg='#008BCF'color={'white'} />
                     </InputGroup>
                    </div>
-                   <div></div>
                 </div>
             </div>
-            <div></div>
+            <div className='navbar23'>
+                <div className='navbar231'>
+                    <div><CgProfile /></div>
+                    <p>Login/Register</p>
+                </div>
+                <div className='navbar232'>
+                    <Button  colorScheme="yellow" borderRadius={'0px'}>Post Free Ad</Button>
+                </div>
+            </div>
         </div>
-        <div></div>
+        <Divider orientation='horizontal'/>
+        <div className='navbar3In'>
+        <InputGroup>
+           <InputLeftAddon children={<BsSearch />} />
+           <Input type='text' placeholder='Please Enter Keyword' />
+            </InputGroup>
+        </div>
+        <div className='navbar3'>
+
+        </div>
         </div>
     </div>
   )
