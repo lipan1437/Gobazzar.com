@@ -1,0 +1,151 @@
+
+.main{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    background-color: #f2f2f2 ;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 80%; 
+    
+}
+
+.inside-container1{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 80px;
+    padding: 20px;
+    
+}
+.inside-container2{
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows:auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 100px;
+}
+.inside-container2 div{
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.inside-container2 div:hover{
+    border: 1px solid blue;
+    cursor: pointer;
+}
+.inside-container2 div img {
+    width: 60%;
+}
+.inside-container3{
+    margin-top: 10px;
+    padding: 15px;
+}
+.inside-container1 div input {
+border: 1px solid gray;
+padding: 3px;
+
+}
+.but{
+   height: 25px;
+   width: 80px ;
+   background-color: #077fc5 ;
+   color: white;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+}
+.but:hover{
+    background-color: #0b6aa1
+}
+.search:hover{
+    background-color: #0b6aa1
+}
+.search{
+    height: 25px;
+    width: 150px ;
+    background-color: #077fc5 ;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+
+.crouser{
+   /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 15px;
+}
+
+.shadow{
+    margin-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+}
+.buget{
+    padding: 5px;
+    background-color: #f2f2f2;
+}
+.buget:hover{
+ background-color: #077fc5;
+ color: #fff;
+}
+
+
+/* shop by choice css */
+
+.choice{
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin-top: 10px;
+    width: 1100px;
+    margin-right: 50px;
+}
+.choice h1 {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.choice_under{
+    width: 272px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+.choice_inside{
+  display:flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:20px;
+}
+
+.choice_in{
+    /* border: 1px solid blue; */
+    width: 100%;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.choice_in img{
+    width: 100%;
+}
+.choice_in button{
+    /* border: 1px solid red; */
+    color: #2f2fd8;
+    padding: 2px;
+}

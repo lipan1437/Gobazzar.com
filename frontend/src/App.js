@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import Topselling from './Components/Topselling';
 import { Popular } from './Components/HomePage/popular';
 import { BuySell } from './Components/HomePage/buy&sell';
 import Trending  from './Components/HomePage/trandingadd';
@@ -20,6 +21,9 @@ function App() {
       <Home />
       <Electronics />
       {/* <Carousel /> */}
+      <Topselling/>
+      <Popular/>
+     <BuySell />
     </div>
   );
 }
