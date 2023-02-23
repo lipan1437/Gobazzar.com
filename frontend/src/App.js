@@ -19,8 +19,6 @@ function App() {
       <Home />
       <Electronics />
       <Topselling/>
-      <Popular/>
-     <BuySell />
     </div>
   );
 }
