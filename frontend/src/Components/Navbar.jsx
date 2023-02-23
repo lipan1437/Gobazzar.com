@@ -99,88 +99,293 @@ export default function Navbar() {
            <Input type='text' placeholder='Please Enter Keyword' />
             </InputGroup>
         </div>
-        <div className='navbar3'>
-           <div>
-            <p>MOBILES <ChevronDownIcon /></p>
-           </div>
-           <div>
-            <p>FURNITURE & DECORE<ChevronDownIcon /></p>
-           </div>
-           <div>
-            <p>ELECTRONICS<ChevronDownIcon /></p>
-           </div>
-           <div>
-            <p>HOME APPLIANCES<ChevronDownIcon /></p>
-           </div>
-           <div>
-            <p>KIDS & TOYS<ChevronDownIcon /></p>
-           </div>
-           <div>
+          <div id="navbar3">
+     <ul id="nav-links">
+          <li>
+               <p >MOBILES <ChevronDownIcon /></p>
+               <div class="megamenu">
+                    <ul>
+                         <li>Mobile Phones<Center><IoMdArrowDropright /></Center></li>
+                         <li>Used Mobiles</li>
+                    </ul>
+                    <ul>
+                          <li>Top Brands (Used/New)<Center><IoMdArrowDropright /></Center></li>
+                          <li>Samsung Mobiles</li>
+                          <li>Iphones</li>
+                          <li>Mi Mobiles</li>
+                          <li>Motorola Phones</li>
+                          <li>LG Phones</li>
+                    </ul>
+                    <ul>
+                          <li>Tablets<Center><IoMdArrowDropright /></Center></li>
+                          <li>Android Tablets</li>
+                          <li>4G Tablets</li>
+                          <li>Apple Tablets</li>
+                    </ul>
+                    <ul>
+                          <li>Mobile Accessories<Center><IoMdArrowDropright /></Center></li>
+                          <li>Bluetooth/Headsets</li>
+                          <li>Earphones</li>
+                          <li>Memory Cards</li>
+                    </ul>
+                    <ul>
+                           <li>Top Models (Used)<Center><IoMdArrowDropright /></Center></li>
+                           <li>Used Iphone 7</li>
+                           <li>Used Iphone 6</li>
+                           <li>Used Redmi Note 4</li>
+                    </ul>
+                    <ul>
+                           <li>Shop By Choice <Center><IoMdArrowDropright /></Center></li>
+                           <li>4G Ready</li>
+                           <li>Selfie Phones</li>
+                           <li>Great Battery Life</li>
+                           <li>High RAM</li>
+                    </ul>
+                    <ul>
+                           <li>Wearable Devices<Center><IoMdArrowDropright /></Center></li>
+                           <li>Smart Bands</li>
+                           <li>Smart Watches</li>
+                    </ul>
+               </div>
+          </li>
+          <li>
+                 <p> FURNITURE & DECORE<ChevronDownIcon /></p>
+               <div class="megamenu">
+                    <ul>
+                          <li>All Furniture <Center><IoMdArrowDropright /></Center></li>
+                          <li>Used Furniture</li>
+                          <li>Refurbished Furniture</li>
+                          <li>Brand New Furniture</li>
+                          <li>Unboxed Furniture</li>
+                    </ul>
+                    <ul>
+                            <li>Living Room <Center><IoMdArrowDropright /></Center></li>
+                            <li>Sofa Sets</li>
+                            <li>Diwans</li>
+                            <li>TV Units</li>
+                            <li>Sofa Cum Bed</li>
+                            <li>Recliners</li>
+                            <li>Shoe Racks</li>
+                            <li>Center Tables</li>
+                    </ul>
+                    <ul>
+                           <li>Dining Room <Center><IoMdArrowDropright /></Center></li>
+                           <li>Dining Tables</li>
+                           <li>Dining Chairs</li>
+                           <li>Cabinets</li>
+                    </ul>
+                    <ul>
+                           <li>Bed Room<Center><IoMdArrowDropright /></Center></li>
+                           <li>Bed Sets</li>
+                           <li>Mattresses</li>
+                           <li>Bedside Tables</li>
+                           <li>Dressing Tables</li>
+                           <li>Wardrobes & Showcases</li>
+                           <li>Almirahs</li>
+                    </ul>
+                    <ul>
+                           <li>Office Furniture<Center><IoMdArrowDropright /></Center></li>
+                           <li>Office Chairs</li>
+                           <li>Office Tables</li>
+                           <li>Conference Tables</li>
+                           <li>Computer Tables</li>
+                    </ul>
+                    <ul>
+                           <li>Kids' Furniture<Center><IoMdArrowDropright /></Center></li>
+                           <li>Beds</li>
+                           <li>Cradle & Cots</li>
+                           <li>Chairs</li>
+                    </ul>
+               </div>
+          </li>
+          <li>
+               <p>ELECTRONICS<ChevronDownIcon /></p>
+               <div class="megamenu">
+                    <ul>
+                          <li>Televisions <Center><IoMdArrowDropright /></Center></li>
+                          <li>LED - Full HD</li>
+                          <li>HD Ready</li>
+                          <li>LED - Ultra HD(4K)</li>
+                          <li>OMLED</li>
+                          <li>Curved TV</li>
+                    </ul>
+                    <ul>
+                          <li>Laptops & Desktop <Center><IoMdArrowDropright /></Center></li>
+                          <li>Laptops</li>
+                          <li>Desktops</li>
+                          <li>2 In 1 Laptops</li>
+                    </ul>
+                    <ul>
+                          <li>Cameras<Center><IoMdArrowDropright /></Center></li>
+                          <li>DSLR Cameras</li>
+                          <li>SLR Camera</li>
+                          <li>Camera Accessories</li>
+                          <li>Camera Lenses</li>
+                          <li>Digital Cameras</li>
+                    </ul>
+                    <ul>
+                           <li>TVs By Screen Size<Center><IoMdArrowDropright /></Center></li>
+                           <li>Below 32 Inch</li>
+                           <li>32 Inch To 39 Inch</li>
+                           <li>40 Inch To 47 Inch</li>
+                           <li>48 Inch To 54 Inch</li>
+                           <li>55 Inch & Above</li>
+                    </ul>
+                    <ul>
+                           <li>Playstation Consoles<Center><IoMdArrowDropright /></Center></li>
+                           <li>Sony PS4</li>
+                           <li>Sony PS3</li>
+                           <li>XBox</li>
+                           <li>Sony Playstation</li>
+                    </ul>
+                    <ul>
+                           <li>Storage<Center><IoMdArrowDropright /></Center></li>
+                           <li>External Hard Drives</li>
+                           <li>Pen Drives</li>
+                    </ul>
+               </div>
+          </li>
+          
+          <li>
+          <p>HOME APPLIANCES<ChevronDownIcon /></p>
+               <div class="megamenu">
+                    <ul>
+                           <li>Refrigerators <Center><IoMdArrowDropright /></Center></li>
+                           <li>Single Door</li>
+                           <li>Double Door</li>
+                           <li>Multi Door</li>
+                           <li>Stabilizers</li>
+                           <li>Small Fridge</li>
+                    </ul>
+                    <ul>
+                          <li>Air Conditioners<Center><IoMdArrowDropright /></Center></li>
+                          <li>Split ACs</li>
+                          <li>Window ACs</li>
+                          <li>Coolers</li>
+                          <li>Table Fans</li>
+                          <li>Ceiling Fans</li>
+                    </ul>
+                    <ul>
+                           <li>Kitchen Appliances<Center><IoMdArrowDropright /></Center></li>
+                           <li>Water Purifiers</li>
+                           <li>Mixer/Grinder/Juicer</li>
+                           <li>Induction Cook Tops</li>
+                           <li>Dish Washers</li>
+                           <li>Electric Cookers</li>
+                           <li>Coffee Makers</li>
+                           <li>Gas Stoves</li>
+                           <li>Electric Kettles</li>
+                           <li>Electric Tandoor</li>
+                    </ul>
+                    <ul>
+                           <li>Small Appliances<Center><IoMdArrowDropright /></Center></li>
+                           <li>Microwaves & OTG</li>
+                           <li>Air Purifiers</li>
+                           <li>Irons</li>
+                           <li>Vacuum Cleaners</li>
+                           <li>Sewing Machines</li>
+                           <li>Room Heaters</li>                         
+                    </ul>
+                    <ul>
+                          <li>Washing Machines<Center><IoMdArrowDropright /></Center></li>  
+                          <li>Semi-Automatic</li>  
+                          <li>Fully-Automatic</li>  
+                          <li>Top Load</li>             
+                    </ul>
+               </div>
+          </li>
+          <li>
+          <p>KIDS & TOYS<ChevronDownIcon /></p>
+               <div class="megamenu">
+                    <ul>
+                          <li>Baby & Infants<Center><IoMdArrowDropright /></Center></li>
+                          <li>Prams Walkers And Strollers</li>
+                          <li>Cradle & Cots</li>
+                          <li>Chairs</li>
+                          <li>Bedding</li>
+                          <li>Baby Carriers</li>
+                          <li>Baby Car Seats</li>
+                          <li>Baby High Chairs</li>
+                    </ul>
+                    <ul>
+                           <li> Toys & Games<Center><IoMdArrowDropright /></Center></li>
+                           <li>Games & Puzzles</li>
+                           <li>Soft Toys</li>
+                           <li>Toy Vehicles</li>
+                           <li>Remote Control Toys</li>
+                           <li>Educational Toys</li>
+                           <li>Music Toys</li>
+                           <li>Inflatable Toys</li>
+                           <li>Lego & Building Blocks</li>                       
+                    </ul>
+                    <ul>
+                           <li>Kids Learning<Center><IoMdArrowDropright /></Center></li>
+                           <li>Kids Story Books</li>
+                           <li>Kids Rhymes</li>
+                           <li>Binoculars</li>
+                           <li>Telescopes</li>
+                           <li>Microscopes</li>
+                           <li>Abacus</li>               
+                    </ul>
+                    <ul>
+                            <li>Kids' Bicycles<Center><IoMdArrowDropright /></Center></li>
+                            <li>Tricycles</li>
+                            <li>Kids Bicycles</li>
+                            <li>Kids Battery Car</li>
+                    </ul>
+               </div>
+          </li>
+          <li>
             <p>SPORTS, HOBBIES & FASHION<ChevronDownIcon /></p>
-           </div>
-        </div>
+            <div className="megamenu">
+               <ul>
+                      <li>Sports Equipment<Center><IoMdArrowDropright /></Center></li>
+                      <li>Badminton</li>
+                      <li>Basketball</li>
+                      <li>Cricket Bat & Kit</li>
+                      <li>Camping & Hiking</li>
+                      <li>Football & Accessories</li>
+                      <li>Pool & Snooker</li>
+                      <li>Skating</li>
+                      <li>Swimming</li>
+                      <li>Table Tennis</li>
+                      <li>Tennis</li>
+               </ul>
+               <ul>
+                      <li>Fitness Equipment<Center><IoMdArrowDropright /></Center></li>
+                      <li>Treadmills</li>
+                      <li>Bicycle & Accessories</li>
+                      <li>Elliptical & Crosstrainers</li>
+                      <li>Exercise Bikes</li>
+                      <li>Dumbbells</li>
+                      <li>Barbells</li>              
+               </ul>
+               <ul>
+                      <li>Fashion<Center><IoMdArrowDropright /></Center></li>
+                      <li>Clothing</li>
+                      <li>Watches</li>
+                      <li>Jewellery</li>
+                      <li>Fashion Accessories</li>
+                      <li>Health & Beauty</li>
+                      <li>Gifts & Stationary  </li>                  
+               </ul>
+               <ul>
+                      <li>Musical Instruments<Center><IoMdArrowDropright /></Center></li>
+                      <li>Drums</li>
+                      <li>Flute</li>
+                      <li>Guitar</li>
+                      <li>Harmonica</li>
+                      <li>Keyboard & Synthesizers</li>
+                      <li>Harmonium</li>
+                      <li>Piano</li>
+                      <li>Trumpet   </li>                 
+               </ul>
+            </div>
+          </li>
+     </ul>
+</div>
+
         </div> 
-        <div className='navbar3_h'>
-            <div>
-            <div>
-               <p className='navbar3_hp'>Mobile Phones<Center><IoMdArrowDropright /></Center> </p>
-               <p>Used Mobiles</p>
-            </div>
-            <div>
-                <p className='navbar3_hp'>Top Models (Used) <Center><IoMdArrowDropright /></Center></p>
-                <p>Used Iphone 7</p>
-                <p>Used Iphone 6</p>
-                <p>Used Redmi Note 4</p>
-            </div>
-            </div>
-            <div>
-            <div>
-                <p className='navbar3_hp'>Top Brands (Used/New)<Center><IoMdArrowDropright /></Center></p>
-                <p>Samsung Mobiles</p>
-                <p>Iphones</p>
-                <p>Mi Mobiles</p>
-                <p>Motorola Phones</p>
-                <p>LG Phones</p>
-            </div>
-            <div>
-                <p className='navbar3_hp'>Shop By Choice <Center><IoMdArrowDropright /></Center></p>
-                <p>4G Ready</p>
-                <p>Selfie Phones</p>
-                <p>Great Battery Life</p>
-                <p>High RAM</p>
-            </div>
-            </div>
-            <div>
-                <div>
-                    <p className='navbar3_hp'>Tablets <Center><IoMdArrowDropright /></Center></p>
-                    <p>Android Tablets</p>
-                    <p>4G Tablets</p>
-                    <p>Apple Tablets</p>
-                </div>
-                <div>
-                    <p className='navbar3_hp'>Wearable Devices <Center><IoMdArrowDropright /></Center></p>
-                    <p>Smart Bands</p>
-                    <p>Smart Watches</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                <p className='navbar3_hp'>Mobile Accessories <Center><IoMdArrowDropright /></Center></p>
-                <p>Bluetooth/Headsets</p>
-                <p>Earphones</p>
-                <p>Memory Cards</p> 
-                </div>
-                <div>
-                    <p className='navbar3_hp'>Shop By Budget <Center><IoMdArrowDropright /></Center></p>
-                    <p>Below ?6,000</p>
-                    <p>?6,001 - ?10,000</p>
-                </div>
-                <div>
-                <p className='navbar3_hp'>All Mobiles & Tablets<Center><IoMdArrowDropright /></Center></p> 
-                </div>
-               
-            </div>
-        </div>
     </div>
   )
 }
