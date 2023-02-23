@@ -18,11 +18,9 @@
   height: 80px;
   padding: 20px;
 }
-.inside-container3 div{
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 10px;
+.inside-container3 div {
+  display: flex;
+  padding: 12px;
 }
 .inside-container2 {
   /* border: 1px solid green; */
@@ -53,6 +51,10 @@
   margin-top: 10px;
   padding: 15px;
 }
+.inside_container4{
+  display: flex;
+  justify-content: space-around;
+}
 .inside-container1 div input {
   border: 1px solid gray;
   padding: 3px;
@@ -68,6 +70,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  margin-top: 10px;
 }
 .but:hover {
   background-color: #0b6aa1;
@@ -85,6 +88,7 @@
   align-items: center;
   padding: 10px;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .crouser {
@@ -108,65 +112,11 @@
   color: #fff;
 }
 
-@media screen and (max-width: 900px) {
- 
-  .inside-container2 {
-    display: grid;
-    grid-template-columns: repeat(3, 70px);
-    grid-template-rows: auto;
-    justify-content: space-around;
-    align-content: start;
-    height: 100px;
-  }
-  .inside-container1 {
-    display: grid;
-    height: 200px;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .inside-container1:nth-child(1) {
-    display: grid;
-    height: 100px;
-  }
-  .inside_container4:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  .search {
-    width: 300px;
-  }
-
-  .choice_inside {
-    display: grid;
-    width: 100%;
-    align-items: start;
-    justify-content: start;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .inside-container1 div input {
-    border: 1px solid gray;
-    padding: 3px;
-    width: 80%;
-  }
-
-  .search {
-    width:150px;
-  }
-}
 
 /* shop by choice css */
 
 .choice {
-  /* border: 1px solid red; */
   padding: 10px;
   margin-top: 10px;
   width: 100%;
@@ -204,3 +154,118 @@
   color: #2f2fd8;
   padding: 2px;
 }
+
+/* trending mobile phones css */
+
+.main_trending{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding:5px;
+    gap:10px;
+    width: 100%;
+}
+.trending{
+    padding: 5px;
+
+}
+.trending div{
+    width: 100%; 
+    height: 350px;
+   padding: 10px;
+   background-position: center;
+}
+.trending_inside{
+    padding: 5px;
+}
+.trending_inside h1{
+  color: #077fc5;
+}
+.trending_inside p{
+  margin: 10px;
+}
+
+.trending_inside:hover{
+    border: 1px solid #077fc5;
+    padding: 5px;
+}
+.trending div img{
+    width: 80%;
+}
+.trending div button{
+    border: 1px solid #0b6aa1;
+    padding: 5px;
+    color:#077fc5;
+    font-size: 15px;
+}
+.trending div button:hover{
+    background-color:#0b6aa1;
+    color: #fefefe;
+}
+
+
+
+
+/* 
+responsive */
+@media screen and (max-width: 900px) {
+    .inside-container2 {
+      display: grid;
+      grid-template-columns: repeat(3, 70px);
+      grid-template-rows: auto;
+      justify-content: space-around;
+      align-content: start;
+      height: 100px;
+    }
+    .inside-container1 {
+      display: grid;
+      height: 200px;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .inside-container1:nth-child(1) {
+      display: grid;
+      height: 100px;
+    }
+    .inside_container4:nth-child(2) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .inside-container1:nth-child(2)  {
+      display: block;
+      margin-bottom: 20px;
+      height: 250px;
+    }
+
+    .search{
+      width: 200px;
+      margin-left: 10px
+    }
+  
+    .choice_inside {
+      display: grid;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .inside-container1 div input {
+      border: 1px solid gray;
+      padding: 3px;
+      width: 80%;
+    }
+  
+    .search {
+      width: 150px;
+    }
+  }
