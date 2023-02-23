@@ -1,7 +1,18 @@
 import React from "react";
 import "./TopsellingStyles.css";
-import Carousel from "react-elastic-carousel";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const Topselling = () => {
+ 
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  
   return (
     <div className="main">
       <div className="container">
@@ -79,7 +90,7 @@ const Topselling = () => {
         </div>
 
         <div className="crouser">
-          <Carousel itemsToShow={1}>
+          <Slider {...settings} >
             <div>
               <img
                 src="https://campaign.kuikr.com/qb/covid19/delivery_fur_857x260_pwa.jpg"
@@ -98,7 +109,7 @@ const Topselling = () => {
                 alt="banner3"
               />
             </div>
-          </Carousel>
+          </Slider>
         </div>
 
         <div className="shadow">
@@ -181,4 +192,4 @@ const Topselling = () => {
   );
 };
 
-export default Topselling;
+export default Topselling ;
