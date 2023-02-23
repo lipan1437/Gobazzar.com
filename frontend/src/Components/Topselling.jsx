@@ -1,8 +1,6 @@
 import React from "react";
 import "./TopsellingStyles.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 const Topselling = () => {
  
     var settings = {
@@ -90,7 +88,7 @@ const Topselling = () => {
         </div>
 
         <div className="crouser">
-          <Slider {...settings} >
+
             <div>
               <img
                 src="https://campaign.kuikr.com/qb/covid19/delivery_fur_857x260_pwa.jpg"
@@ -109,7 +107,7 @@ const Topselling = () => {
                 alt="banner3"
               />
             </div>
-          </Slider>
+
         </div>
 
         <div className="shadow">
