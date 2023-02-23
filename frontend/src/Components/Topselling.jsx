@@ -106,7 +106,7 @@ const Topselling = () => {
             <div>
               <h1>Find Mobile by Budget</h1>
             </div>
-            <div className="inside-container1">
+            <div className="inside_container4">
               <div className="buget">
                 <button>Below ₹ 6,000</button>
               </div>
