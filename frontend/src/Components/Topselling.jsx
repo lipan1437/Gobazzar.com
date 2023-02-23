@@ -1,23 +1,22 @@
 import React from "react";
 import "./TopsellingStyles.css";
-
+import Slider from "react-slick";
 const Topselling = () => {
- 
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-    var products = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-    }
-  
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+  var products = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="main">
       <div className="container">
@@ -94,28 +93,26 @@ const Topselling = () => {
           </div>
         </div>
 
-        <div className="crouser">
-
-            <div>
-              <img
-                src="https://campaign.kuikr.com/qb/covid19/delivery_fur_857x260_pwa.jpg"
-                alt="banner1"
-              />
-            </div>
-            <div>
-              <img
-                src="https://campaign.kuikr.com/qb/covid19/retail_fur_857x260_pwa.jpg"
-                alt="banner2"
-              />
-            </div>
-            <div>
-              <img
-                src="https://campaign.kuikr.com/qb/19june19/wqa_857x260.jpg"
-                alt="banner3"
-              />
-            </div>
-
-        </div>
+        <Slider {...settings} className="crouser">
+          <div>
+            <img
+              src="https://campaign.kuikr.com/qb/covid19/delivery_fur_857x260_pwa.jpg"
+              alt="banner1"
+            />
+          </div>
+          <div>
+            <img
+              src="https://campaign.kuikr.com/qb/covid19/retail_fur_857x260_pwa.jpg"
+              alt="banner2"
+            />
+          </div>
+          <div>
+            <img
+              src="https://campaign.kuikr.com/qb/19june19/wqa_857x260.jpg"
+              alt="banner3"
+            />
+          </div>
+        </Slider>
 
         <div className="shadow">
           <div className="inside-container3">
@@ -192,57 +189,68 @@ const Topselling = () => {
             </div>
           </div>
         </div>
-  
-<div className="trending_container">
-  <div className="main_trending">
-    <div>
-  <h1>Trending mobile phones</h1>
-    </div>
-    <div className="but">
-  <button>See All</button>
-    </div>
-  </div>
-    <Slider {...products} className="trending">
-        <div className="trending_inside">
-          <img src="https://teja8.kuikr.com/i5/20230206/IPhone-14pro-max-5gDubai-aaa-high-productcod-available-VB201705171774173-ak_WBP347417281-1675623174.png" alt="iphone_14pro" />
-          <h1>Iphone 14pro max 5G</h1>
-          <p>₹ 8,999</p>
-          <button>View Details</button>
-        </div>
-        <div className="trending_inside">
-          <img src="https://teja9.kuikr.com/i6/20230222/IPhone-14pro-max-5gDubai-aaa-high-productcod-available------Apple-Others-VB201705171774173-ak_WBP1193913827-1677063528.png" alt="iphone_14pro" />
-          <h1>Order now holi offer</h1>
-          <p>₹ 8,999</p>
-          <button>View Details</button>
-        </div>
-        <div className="trending_inside">
-          <img src="https://teja10.kuikr.com/i6/20230222/IPhone-13pro-max-4gDubai-aaa-high-productcod-available-VB201705171774173-ak_WBP1109813213-1677064183.png" alt="" />
-          <h1>Iphone 13pro max 4g</h1>
-          <p>₹ 4,500</p>
-          <button>View Details</button>
-        </div>
 
-        <div className="trending_inside">
-          <img src="https://teja9.kuikr.com/i5/20230222/IPhone-14pro-max-5gDubai-aaa-high-productcod-available-VB201705171774173-ak_WBP1119509788-1677063596.png" alt="" />
-          <h1>Order now holi offer</h1>
-          <p>₹ 8,9999</p>
-          <button>View Details</button>
+        <div className="trending_container">
+          <div className="main_trending">
+            <div>
+              <h1>Trending mobile phones</h1>
+            </div>
+            <div className="but">
+              <button>See All</button>
+            </div>
+          </div>
+          <Slider {...products} className="trending">
+            <div className="trending_inside">
+              <img
+                src="https://teja8.kuikr.com/i5/20230206/IPhone-14pro-max-5gDubai-aaa-high-productcod-available-VB201705171774173-ak_WBP347417281-1675623174.png"
+                alt="iphone_14pro"
+              />
+              <h1>Iphone 14pro max 5G</h1>
+              <p>₹ 8,999</p>
+              <button>View Details</button>
+            </div>
+            <div className="trending_inside">
+              <img
+                src="https://teja9.kuikr.com/i6/20230222/IPhone-14pro-max-5gDubai-aaa-high-productcod-available------Apple-Others-VB201705171774173-ak_WBP1193913827-1677063528.png"
+                alt="iphone_14pro"
+              />
+              <h1>Order now holi offer</h1>
+              <p>₹ 8,999</p>
+              <button>View Details</button>
+            </div>
+            <div className="trending_inside">
+              <img
+                src="https://teja10.kuikr.com/i6/20230222/IPhone-13pro-max-4gDubai-aaa-high-productcod-available-VB201705171774173-ak_WBP1109813213-1677064183.png"
+                alt=""
+              />
+              <h1>Iphone 13pro max 4g</h1>
+              <p>₹ 4,500</p>
+              <button>View Details</button>
+            </div>
+
+            <div className="trending_inside">
+              <img
+                src="https://teja9.kuikr.com/i5/20230222/IPhone-14pro-max-5gDubai-aaa-high-productcod-available-VB201705171774173-ak_WBP1119509788-1677063596.png"
+                alt=""
+              />
+              <h1>Order now holi offer</h1>
+              <p>₹ 8,9999</p>
+              <button>View Details</button>
+            </div>
+            <div className="trending_inside">
+              <img
+                src="https://teja9.kuikr.com/i4/20230222/IPhone-14pro-max-5gDubai-aaa-high-productcod-available-VB201705171774173-ak_WBP350028888-1677064573.png"
+                alt=""
+              />
+              <h1>Order now holi offer</h1>
+              <p>₹ 8,999</p>
+              <button>View Details</button>
+            </div>
+          </Slider>
         </div>
-        <div className="trending_inside">
-          <img src="https://teja9.kuikr.com/i4/20230222/IPhone-14pro-max-5gDubai-aaa-high-productcod-available-VB201705171774173-ak_WBP350028888-1677064573.png" alt="" />
-          <h1>Order now holi offer</h1>
-          <p>₹ 8,999</p>
-          <button>View Details</button>
-        </div>
-
-    </Slider>
-</div>
- 
-
-
       </div>
     </div>
   );
 };
 
-export default Topselling ;
+export default Topselling;

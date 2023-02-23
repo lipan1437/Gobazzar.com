@@ -18,7 +18,7 @@ function App() {
       <Mobile />
       <Home />
       <Electronics />
-      <Topselling/>
+      {/* <Topselling/> */}
     </div>
   );
 }
