@@ -7,6 +7,7 @@ import Trending  from './Components/HomePage/trandingadd';
 import Mobile from './Components/HomePage/mobile';
 import Home from './Components/HomePage/home&lifestyle';
 import Electronics from './Components/HomePage/electronics';
+import MainRoutes from './Pages/MainRoutes';
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
       <Trending />
       <Mobile />
       <Home />
-      <Electronics />
-      {/* <Topselling/> */}
+      <Electronics /> 
+  
     </div>
   );
 }
