@@ -7,6 +7,9 @@ import Trending  from './Components/HomePage/trandingadd';
 import Mobile from './Components/HomePage/mobile';
 import Home from './Components/HomePage/home&lifestyle';
 import Electronics from './Components/HomePage/electronics';
+import { Category } from './Components/HomePage/category';
+import { Alert } from './Components/HomePage/alert';
+import { Reviews } from './Components/HomePage/reviews';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
       <Mobile />
       <Home />
       <Electronics />
+      <Category />
+      <Alert />
+      <Reviews />
       <Topselling/>
     </div>
   );
