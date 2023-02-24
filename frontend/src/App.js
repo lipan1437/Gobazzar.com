@@ -19,22 +19,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Popular />
-      <BuySell />
-      <Trending />
-      <Mobile />
-      <Home />
-
-      <Electronics /> */}
-      {/* <Topselling/> */}
-      <Singlepage/>
-
-
       <Electronics />
       <Category />
       <Alert />
       <Reviews />
-      <Topselling/>
       <Electronics />
     </div>
   );
