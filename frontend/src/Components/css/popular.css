@@ -1,10 +1,15 @@
+.popular-main{
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
 .product-Crousel { 
     position: relative;
     overflow: hidden;
     padding: 26px;
     margin: auto;
     width: 80%;
-    
+   
   }
   .product-container {
     padding: 0 10px;

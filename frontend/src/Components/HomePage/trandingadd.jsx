@@ -87,6 +87,7 @@ import "../css/trending.css"
           };
           return (
             <>
+            <div className="home-main">
             <div style={{width:"80%",margin:"auto",marginTop:"30px",backgroundColor:"white",cursor:"pointer"}}>
              <p style={{fontSize:"20px"}}>Trendind Ads</p>
               <Slider {...settings} 
@@ -99,6 +100,7 @@ import "../css/trending.css"
                       </div>
                   })}             
               </Slider>
+            </div>
             </div>
             </>
           );

@@ -11,6 +11,7 @@ import { Category } from './Components/HomePage/category';
 import { Alert } from './Components/HomePage/alert';
 import { Reviews } from './Components/HomePage/reviews';
 import MainRoutes from './Pages/MainRoutes';
+import { Footer } from './Components/HomePage/footer';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
       <Alert />
       <Reviews />
       <Topselling/>
-      <Electronics />
+      <Footer />
     </div>
   );
 }
