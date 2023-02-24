@@ -13,7 +13,8 @@ import {BsCart} from 'react-icons/bs'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {CgProfile} from 'react-icons/cg'
 import {ChevronDownIcon} from '@chakra-ui/icons'
-import {Select,InputGroup,InputRightAddon,InputLeftAddon,Input,Button,Divider, Center} from '@chakra-ui/react'
+import {Select,InputGroup,InputRightAddon,InputLeftAddon,Input,Button,Divider, Center,
+Drawer,DrawerBody,DrawerCloseButton,DrawerHeader,DrawerFooter,DrawerContent,useDisclosure,DrawerOverlay} from '@chakra-ui/react'
 
 
 export default function Navbar() {
@@ -63,7 +64,10 @@ export default function Navbar() {
         </div>
         <div className='navbar2'>
             <div className='navbar21'>
-                <div><GiHamburgerMenu /></div>
+                <div>
+                    {/* <GiHamburgerMenu /> */}
+                    <DrawerExample />
+                </div>
                 <div><img src={gobazaar} alt="Go Bazzar" /></div>
             </div>
             <div className='navbar22'>
@@ -383,7 +387,7 @@ export default function Navbar() {
             </div>
           </li>
      </ul>
-</div>
+        </div>
 
         </div> 
     </div>
@@ -402,3 +406,42 @@ function Location({location,data}) {
         </Select>
     )
 }
+
+
+function DrawerExample() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const btnRef = React.useRef()
+  
+    return (
+      <>
+      <GiHamburgerMenu ref={btnRef} onClick={onOpen}/>
+        <Drawer
+          isOpen={isOpen}
+          placement='left'
+          onClose={onClose}
+          finalFocusRef={btnRef}
+        >
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerCloseButton color={'gray'} />
+
+                <div className='drawerHeader'>
+                    <img src={gobazaar} alt="" />
+                </div>
+                <div className='dBody'></div>
+                <div className="dbodyAll">
+                <div>
+                    <div><CgProfile /></div>
+                    <p>Login/Register</p>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                </div>
+                    
+
+          </DrawerContent>
+        </Drawer>
+      </>
+    )
+  }
