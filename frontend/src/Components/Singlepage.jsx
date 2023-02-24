@@ -1,15 +1,27 @@
 import React from "react";
 import "./SinglepageStyles.css";
 const Singlepage = () => {
+
+
+let prodData = JSON.parse(localStorage.getItem("Item")) || [] ;
+console.log('prodData', prodData);
+
   return (
     <div className="main">
       <div>
-        <div className="logo">
+        {/* <div className="logo">
           <img
             src="https://teja9.kuikr.com/i6/20230224/Apple-Iphone-11-PRO-256-Gb-VB201705171774173-ak_LWBP1435306058-1677184049_lg.webp"
             alt="phone"
           />
-        </div>
+        </div> */}
+        {prodData.map((el)=>{
+          return (
+            <div key={el.id}>
+              <img  src={el.src} alt="phone"/> 
+            </div>
+          )
+        })}
         <div className="heading">
           <h1>Ad Details</h1>
         </div>
@@ -57,8 +69,22 @@ const Singlepage = () => {
         </div>
       </div>
       <div className="right_heading">
-        <p>Apple Iphone 11 PRO 256 Gb</p>
-        <span>₹42,000</span>
+              {prodData.map((el)=>{
+          return (
+            <div  className="used" key={el.id}>
+                <span>USED</span>
+                <li>{el.heading}</li>
+            </div>
+          )
+        })}
+         {prodData.map((el)=>{
+          return (
+            <div key={el.id}>
+               <p>{el.title}</p>
+               <span>₹{el.price}</span>
+            </div>
+          )
+        })}
         <div className="call">
           <div className="color">
             <button>CALL</button>

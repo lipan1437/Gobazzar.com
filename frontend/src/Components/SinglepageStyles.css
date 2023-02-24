@@ -7,6 +7,7 @@
 .logo{
     width: 200px;
     margin-top: 20px;
+    margin-left: 40%;
 }
 
 
@@ -36,7 +37,6 @@ ul {
 .right_heading{
     padding: 20px;
     height: 500px;
-    margin-top: 150px;
 }
 .right_heading p,span{
     font-size: 25px;
@@ -60,4 +60,17 @@ ul {
     color:  #007db2 ;
     padding: 8px;
     font-weight: 800px;
+}
+.used{
+    display: flex;
+    gap: 10px;
+}
+.used span{
+ color: green;
+ font-size: 15px;
+}
+.used li{
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.8;
 }
