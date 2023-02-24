@@ -1,0 +1,268 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "no_of_chapters": 6,
+      "author": "Oppo E7",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Realme",
+      "price":8999,
+      "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1214042358-1514449932.jpeg",
+      "release_year": 2019
+    },
+    {
+      "id": 2,
+      "no_of_chapters": 6,
+      "author": "Apple Iphone 6s",
+      "cover_photo": "",
+      "book_name": "8GB RAM | 64GB ROM",
+      "category": "Apple",
+      "price":7999,
+      "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP2018785428-1514456122.jpeg",
+      "release_year": 2020
+    },
+    {
+      "id": 3,
+      "no_of_chapters": 6,
+      "author": "Xiaomi Redmi Pro",
+      "cover_photo": "",
+      "book_name": "3GB RAM | 32GB ROM",
+      "price":9999,
+      "category": "Redmi",
+      "image": "https://teja9.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP895869991-1514452229.jpeg",
+      "release_year": 2021
+    },
+    {
+      "id": 4,
+      "no_of_chapters": 6,
+      "author": "Vivo V1",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Vivo",
+      "price":6777,
+      "image": "https://teja8.kuikr.com/i6/20171228/VB201705171774173-ak_LWBP441294866-1514445749.jpeg",
+      "release_year": 2022
+    },
+    {
+      "id": 5,
+      "no_of_chapters": 6,
+      "author": "Oppo E7",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Realme",
+      "price":8999,
+      "image": "https://teja8.kuikr.com/i6/20171228/VB201705171774173-ak_LWBP1091104991-1514454575.jpeg",
+      "release_year": 2018
+    },
+    {
+      "id": 6,
+      "no_of_chapters": 6,
+      "author": "Apple Iphone 6s",
+      "cover_photo": "",
+      "book_name": "8GB RAM | 64GB ROM",
+      "category": "Apple",
+      "price":7999,
+      "image": "https://teja10.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP527959360-1514461411.jpeg",
+      "release_year": 2017
+    },
+    {
+      "id": 7,
+      "no_of_chapters": 6,
+      "author": "Oppo E7",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Realme",
+      "price":8999,
+      "image": "https://teja9.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP1070365558-1514456439.jpeg",
+      "release_year": 2016
+    },
+    {
+      "id": 8,
+      "no_of_chapters": 6,
+      "author": "Apple Iphone 6s",
+      "cover_photo": "",
+      "book_name": "8GB RAM | 64GB ROM",
+      "category": "Apple",
+      "price":7999,
+      "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP19572831-1514450643.jpeg",
+      "release_year": 2015
+    },
+    {
+      "id": 9,
+      "no_of_chapters": 6,
+      "author": "Vivo V1",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Vivo",
+      "price":6777,
+      "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1824220659-1514457791.jpeg",
+      "release_year": 2014
+    },
+    {
+      "id": 10,
+      "no_of_chapters": 6,
+      "author": "Vivo V1",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Vivo",
+      "price":6777,
+      "image": "https://teja9.kuikr.com/i6/20171228/VB201705171774173-ak_LWBP2838638-1514449668.jpeg",
+      "release_year": 2013
+    },
+    {
+      "id": 11,
+      "no_of_chapters": 6,
+      "author": "Vivo V1",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Vivo",
+      "price":6777,
+      "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1254669687-1514447957.jpeg",
+      "release_year": 2013
+    },
+    {
+      "id": 12,
+      "no_of_chapters": 6,
+      "author": "Vivo V1",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Vivo",
+      "price":6777,
+      "image": "https://teja10.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP467812527-1514455524.jpeg",
+      "release_year": 2013
+    },
+    {
+      "id": 13,
+      "no_of_chapters": 6,
+      "author": "Xiaomi Redmi Pro",
+      "cover_photo": "",
+      "book_name": "3GB RAM | 32GB ROM",
+      "price":9999,
+      "category": "Redmi",
+      "image": "https://teja9.kuikr.com/o1/20190425/ak_931746132-1556179530.jpeg",
+      "release_year": 2013
+    },
+    {
+      "id": 14,
+      "no_of_chapters": 6,
+      "author": "Xiaomi Redmi Pro",
+      "cover_photo": "",
+      "book_name": "3GB RAM | 32GB ROM",
+      "price":9999,
+      "category": "Redmi",
+      "image": "https://teja9.kuikr.com/i6/20171228/VB201705171774173-ak_LWBP2838638-1514449668.jpeg",
+      "release_year": 2013
+    },
+    {
+      "id": 15,
+      "no_of_chapters": 6,
+      "author": "Oppo E7",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Realme",
+      "price":8999,
+      "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1214042358-1514449932.jpeg",
+      "release_year": 2019
+    },
+    {
+      "id": 16,
+      "no_of_chapters": 6,
+      "author": "Oppo E7",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Realme",
+      "price":8999,
+      "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1214042358-1514449932.jpeg",
+      "release_year": 2019
+    },
+    {
+      "id": 17,
+      "no_of_chapters": 6,
+      "author": "Oppo E7",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Realme",
+      "price":8999,
+      "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1214042358-1514449932.jpeg",
+      "release_year": 2019
+    },
+    {
+      "id": 18,
+      "no_of_chapters": 6,
+      "author": "Oppo E7",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Realme",
+      "price":8999,
+      "image": "https://teja9.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP1070365558-1514456439.jpeg",
+      "release_year": 2016
+    },
+    {
+      "id": 19,
+      "no_of_chapters": 6,
+      "author": "Oppo E7",
+      "cover_photo": "",
+      "book_name": "2GB RAM | 128GB ROM",
+      "category": "Realme",
+      "price":8999,
+      "image": "https://teja9.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP1070365558-1514456439.jpeg",
+      "release_year": 2016
+    },
+    {
+      "id": 20,
+      "no_of_chapters": 6,
+      "author": "Apple Iphone 6s",
+      "cover_photo": "",
+      "book_name": "8GB RAM | 64GB ROM",
+      "category": "Apple",
+      "price":7999,
+      "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP2018785428-1514456122.jpeg",
+      "release_year": 2020
+    },
+    {
+      "id": 21,
+      "no_of_chapters": 6,
+      "author": "Apple Iphone 6s",
+      "cover_photo": "",
+      "book_name": "8GB RAM | 64GB ROM",
+      "category": "Apple",
+      "price":7999,
+      "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP2018785428-1514456122.jpeg",
+      "release_year": 2020
+    },
+    {
+      "id": 22,
+      "no_of_chapters": 6,
+      "author": "Apple Iphone 6s",
+      "cover_photo": "",
+      "book_name": "8GB RAM | 64GB ROM",
+      "category": "Apple",
+      "price":7999,
+      "image": "https://teja10.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP527959360-1514461411.jpeg",
+      "release_year": 2017
+    },
+    {
+      "id": 23,
+      "no_of_chapters": 6,
+      "author": "Apple Iphone 6s",
+      "cover_photo": "",
+      "book_name": "8GB RAM | 64GB ROM",
+      "category": "Apple",
+      "price":7999,
+      "image": "https://teja10.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP527959360-1514461411.jpeg",
+      "release_year": 2017
+    },
+    {
+      "id": 24,
+      "no_of_chapters": 6,
+      "author": "Apple Iphone 6s",
+      "cover_photo": "",
+      "book_name": "8GB RAM | 64GB ROM",
+      "category": "Apple",
+      "price":7999,
+      "image": "https://teja10.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP527959360-1514461411.jpeg",
+      "release_year": 2017
+    }
+  ]
+}

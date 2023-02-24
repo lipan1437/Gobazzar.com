@@ -10,6 +10,7 @@ import Electronics from './Components/HomePage/electronics';
 import { Category } from './Components/HomePage/category';
 import { Alert } from './Components/HomePage/alert';
 import { Reviews } from './Components/HomePage/reviews';
+import MainRoutes from './Pages/MainRoutes';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Alert />
       <Reviews />
       <Topselling/>
+      <Electronics />
     </div>
   );
 }
