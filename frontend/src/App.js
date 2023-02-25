@@ -7,11 +7,18 @@ import Trending  from './Components/HomePage/trandingadd';
 import Mobile from './Components/HomePage/mobile';
 import Home from './Components/HomePage/home&lifestyle';
 import Electronics from './Components/HomePage/electronics';
+
+import Singlepage from './Components/Singlepage';
+
+import { Category } from './Components/HomePage/category';
+import { Alert } from './Components/HomePage/alert';
+import { Reviews } from './Components/HomePage/reviews';
 import MainRoutes from './Pages/MainRoutes';
 
 function App() {
   return (
     <div className="App">
+
       {/* <Navbar />
       <Popular />
       <BuySell />
@@ -20,6 +27,14 @@ function App() {
       <Home />
       <Electronics />  */}
       <MainRoutes/>
+
+      <Navbar />
+      <Electronics />
+      <Category />
+      <Alert />
+      <Reviews />
+      <Electronics />
+
     </div>
   );
 }
