@@ -17,7 +17,7 @@ console.log('prodData', prodData);
         </div> */}
         {prodData.map((el)=>{
           return (
-            <div key={el.id}>
+            <div className="logo" key={el.id}>
               <img  src={el.src} alt="phone"/> 
             </div>
           )
@@ -27,6 +27,7 @@ console.log('prodData', prodData);
         </div>
         <hr />
         <div className="list">
+          <div className="inside_list">
           <ul>
             <li>Ad ID</li>
             <li>Model</li>
@@ -41,7 +42,9 @@ console.log('prodData', prodData);
             <li>2020</li>
             <li>Not Available</li>
           </ul>
+          </div>
           <div class="vl"></div>
+          <div className="inside_list">
           <ul>
             <li>Brand Name</li>
             <li>Location</li>
@@ -56,12 +59,13 @@ console.log('prodData', prodData);
             <li>Charger, Data Cable</li>
             <li>Individual</li>
           </ul>
+          </div>
         </div>
         <hr />
         <div className="heading">
           <h1>Description</h1>
         </div>
-        <div>
+        <div className="des">
           <p>
             Midnight Green 91% battery health original battery original screen
             original charger with bill original apple silicon cover
@@ -79,7 +83,7 @@ console.log('prodData', prodData);
         })}
          {prodData.map((el)=>{
           return (
-            <div key={el.id}>
+            <div className="inside_right_heading" key={el.id}>
                <p>{el.title}</p>
                <span>₹{el.price}</span>
             </div>
@@ -89,7 +93,7 @@ console.log('prodData', prodData);
           <div className="color">
             <button>CALL</button>
           </div>
-          <div className="white">
+          <div className="normal">
             <button>CHAT</button>
           </div>
         </div>
