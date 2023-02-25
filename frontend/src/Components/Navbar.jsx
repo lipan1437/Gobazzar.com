@@ -2,16 +2,20 @@ import React from 'react'
 import './Navbar.css'
 import gobazaar from '../gobazaar.png'
 import {BiShoppingBag} from 'react-icons/bi'
-import {BsSearch} from 'react-icons/bs'
+import {BsSearch,BsPerson,BsFillBagFill} from 'react-icons/bs'
 import {VscDesktopDownload} from 'react-icons/vsc'
-import {MdOutlineLocalOffer} from 'react-icons/md'
+import {MdOutlineLocalOffer,MdOutlinePayment,MdMiscellaneousServices} from 'react-icons/md'
 import {IoStorefrontOutline,IoChatbubblesSharp} from 'react-icons/io5'
 import {IoMdArrowDropright} from 'react-icons/io'
-import {HiOutlineCurrencyRupee} from 'react-icons/hi'
+import {HiOutlineCurrencyRupee} from 'react-icons/hi';
+import {ImBooks} from 'react-icons/im'
 import {BsCart} from 'react-icons/bs'
-
-import {GiHamburgerMenu} from 'react-icons/gi'
+import { Link } from 'react-router-dom'
+import {GiHamburgerMenu,GiSofa} from 'react-icons/gi'
 import {CgProfile} from 'react-icons/cg'
+import {AiFillCar,AiOutlineHome,AiFillBulb} from 'react-icons/ai'
+import {FaBuysellads,FaMobileAlt} from 'react-icons/fa'
+import {RiMotorbikeFill} from 'react-icons/ri'
 import {ChevronDownIcon} from '@chakra-ui/icons'
 import {Select,InputGroup,InputRightAddon,InputLeftAddon,Input,Button,Divider, Center,
 Drawer,DrawerBody,DrawerCloseButton,DrawerHeader,DrawerFooter,DrawerContent,useDisclosure,DrawerOverlay} from '@chakra-ui/react'
@@ -68,7 +72,7 @@ export default function Navbar() {
                     {/* <GiHamburgerMenu /> */}
                     <DrawerExample />
                 </div>
-                <div><img src={gobazaar} alt="Go Bazzar" /></div>
+                <div><Link to={'/'}><img src={gobazaar} alt="Go Bazzar" /></Link></div>
             </div>
             <div className='navbar22'>
                 <div className='navbar221'> 
@@ -106,10 +110,10 @@ export default function Navbar() {
           <div id="navbar3">
      <ul id="nav-links">
           <li>
-               <p >MOBILES <ChevronDownIcon /></p>
+               <p ><Link to="/products">MOBILES <ChevronDownIcon /></Link></p>
                <div class="megamenu">
                     <ul>
-                         <li>Mobile Phones<Center><IoMdArrowDropright /></Center></li>
+                         <li><Link to="/products">Mobile Phones<Center><IoMdArrowDropright /></Center></Link></li>
                          <li>Used Mobiles</li>
                     </ul>
                     <ul>
@@ -435,10 +439,57 @@ function DrawerExample() {
                     <p>Login/Register</p>
                 </div>
                 <div>
-                    <div></div>
+                    <div><BsPerson /></div>
+                    <p>My Account</p>
                 </div>
+                <div>
+                    <div><MdOutlinePayment /></div>
+                    <p>Order & Payment</p>
                 </div>
-                    
+                <div>
+                    <div><FaBuysellads/></div>
+                    <p>My Ads</p>
+                </div>
+            </div>
+            <div className="dbodyAll" >
+                <p color='gray'>Categories</p>
+                <div>
+                    <div><MdMiscellaneousServices /></div>
+                    <p>Services</p>
+                </div>
+                <div>
+                    <div><BsFillBagFill /></div>
+                    <p>Jobs</p>
+                </div>
+                <div>
+                    <div><AiFillCar /></div>
+                    <p>Cars</p>
+                </div>
+                <div>
+                    <div><RiMotorbikeFill /></div>
+                    <p>Bikes</p>
+                </div>
+                <div>
+                    <div><GiSofa /></div>
+                    <p>Furniture & Decore</p>
+                </div>
+                <div>
+                    <div><AiOutlineHome /></div>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <div><AiFillBulb /></div>
+                    <p>Electronics</p>
+                </div>
+                <div>
+                    <div><FaMobileAlt /></div>
+                    <p>Mobile</p>
+                </div>
+                <div>
+                    <div><ImBooks /></div>
+                    <p>Books</p>
+                </div>
+            </div>     
 
           </DrawerContent>
         </Drawer>
