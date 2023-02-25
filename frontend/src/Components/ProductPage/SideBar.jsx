@@ -11,6 +11,8 @@ import {
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import styles from "../../Styles/Products.module.css";
+
+
 export default function SideBar() {
   const [searchParams, setSearchParams] = useSearchParams();
   console.log(searchParams);
@@ -57,7 +59,7 @@ export default function SideBar() {
         Mobile Phones
       </Heading>
       {/* <h3>Filter By</h3> */}
-      <Accordion allowToggle>
+      <Accordion allowToggle className={styles.Accordion}>
         <AccordionItem>
           <h6>
             <AccordionButton>
