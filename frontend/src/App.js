@@ -16,6 +16,8 @@ import MainRoutes from './Pages/MainRoutes';
 import { Route,Routes } from 'react-router-dom';
 import SingleBook from './Pages/SingleBook';
 import HomePage from './Pages/HomePage';
+import CreatePost from './Components/AdminPage/CreatePost';
+import Posts from './Components/AdminPage/Posts'
 
 function App() {
   return (
@@ -33,6 +35,9 @@ function App() {
         <Route path='/detail' element={<Singlepage />} />
         <Route path='/signUp' element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path='/admin/createPost' element={<CreatePost />} />
+        <Route path='/admin/posts' element={<Posts />} />
+
         </Routes>
 
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {Box, Center, SimpleGrid,Heading,Image, Button, Select} from "@chakra-ui/react"
 
 const Posts = () => {
-    const [posts, setPosts] = useState("")
+    const [posts, setPosts] = useState([])
 
     useEffect(()=>{
          fetch("http://localhost:8080/posts",{
@@ -43,7 +43,7 @@ const deletePost =(postID)=>{
         <hr />
         <div>
         <SimpleGrid  mt={3} p={5} columns={{base: 1,sm: 2,md: 3,lg: 4,}} spacing='15px' w={"100%"}>
-             {posts?posts.map((data,id) => (
+             {posts? posts && posts.map((data,id) => (
           <Box w="100%" h="100%" cursor="pointer" bg="white" boxShadow="2xl" p={3} key={id}>
                <Center> <Image w="100%" h="40%" src={data.image} /></Center>
                 <Heading size="xs" mt={2} >
