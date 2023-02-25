@@ -18,12 +18,23 @@ import MainRoutes from './Pages/MainRoutes';
 function App() {
   return (
     <div className="App">
+
+      {/* <Navbar />
+      <Popular />
+      <BuySell />
+      <Trending />
+      <Mobile />
+      <Home />
+      <Electronics />  */}
+      <MainRoutes/>
+
       <Navbar />
       <Electronics />
       <Category />
       <Alert />
       <Reviews />
       <Electronics />
+
     </div>
   );
 }

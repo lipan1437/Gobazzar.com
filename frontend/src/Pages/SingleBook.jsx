@@ -15,9 +15,12 @@ export default function SingleBook() {
     bookData && setBook(bookData)
   },[])
   return (
-  <div>
-     <h1>Single Book {id}</h1>
+  <div style={{width:"100%"}}>
+     <h1>Single Product {id}</h1>
+     <div style={{width:"30%", margin:"auto"}}>
      <BookCard book={book}/>
+     
+     </div>
 
   </div>
   )
