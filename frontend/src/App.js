@@ -12,14 +12,14 @@ import MainRoutes from './Pages/MainRoutes';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar />
       <Popular />
       <BuySell />
       <Trending />
       <Mobile />
       <Home />
-      <Electronics /> 
-  
+      <Electronics />  */}
+      <MainRoutes/>
     </div>
   );
 }
