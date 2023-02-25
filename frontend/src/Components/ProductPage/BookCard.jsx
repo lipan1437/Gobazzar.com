@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function BookCard({book}) {
     
   return (
-    <SimpleGrid style={{border:"1px solid teal"}} w={"100%"} >
+    <SimpleGrid style={{border:"1px solid teal"}} w={"100%"}  >
       <Link to={`/books/${book.id}`}>
         <Image src={book.image} alt="book_cover" w={"100%"} m={"auto"}/>
       </Link>

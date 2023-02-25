@@ -28,12 +28,12 @@ function App() {
       <Electronics />  */}
       <MainRoutes/>
 
-      <Navbar />
+      {/* <Navbar />
       <Electronics />
       <Category />
       <Alert />
       <Reviews />
-      <Electronics />
+      <Electronics /> */}
 
     </div>
   );

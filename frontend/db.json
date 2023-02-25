@@ -5,20 +5,20 @@
       "no_of_chapters": 6,
       "author": "Oppo E7",
       "cover_photo": "",
-      "book_name": "2GB RAM | 128GB ROM",
+      "book_name": "2GB RAM | 128GB ROM updated",
       "category": "Realme",
-      "price":8999,
+      "price": 8999,
       "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1214042358-1514449932.jpeg",
       "release_year": 2019
     },
     {
       "id": 2,
       "no_of_chapters": 6,
-      "author": "Apple Iphone 6s",
+      "author": "Apple Iphone 6s version-2",
       "cover_photo": "",
-      "book_name": "8GB RAM | 64GB ROM",
+      "book_name": "8GB RAM | 64GB ROM new",
       "category": "Apple",
-      "price":7999,
+      "price": 7999,
       "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP2018785428-1514456122.jpeg",
       "release_year": 2020
     },
@@ -28,7 +28,7 @@
       "author": "Xiaomi Redmi Pro",
       "cover_photo": "",
       "book_name": "3GB RAM | 32GB ROM",
-      "price":9999,
+      "price": 9999,
       "category": "Redmi",
       "image": "https://teja9.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP895869991-1514452229.jpeg",
       "release_year": 2021
@@ -40,7 +40,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Vivo",
-      "price":6777,
+      "price": 6777,
       "image": "https://teja8.kuikr.com/i6/20171228/VB201705171774173-ak_LWBP441294866-1514445749.jpeg",
       "release_year": 2022
     },
@@ -51,7 +51,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Realme",
-      "price":8999,
+      "price": 8999,
       "image": "https://teja8.kuikr.com/i6/20171228/VB201705171774173-ak_LWBP1091104991-1514454575.jpeg",
       "release_year": 2018
     },
@@ -62,7 +62,7 @@
       "cover_photo": "",
       "book_name": "8GB RAM | 64GB ROM",
       "category": "Apple",
-      "price":7999,
+      "price": 7999,
       "image": "https://teja10.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP527959360-1514461411.jpeg",
       "release_year": 2017
     },
@@ -73,7 +73,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Realme",
-      "price":8999,
+      "price": 8999,
       "image": "https://teja9.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP1070365558-1514456439.jpeg",
       "release_year": 2016
     },
@@ -84,7 +84,7 @@
       "cover_photo": "",
       "book_name": "8GB RAM | 64GB ROM",
       "category": "Apple",
-      "price":7999,
+      "price": 7999,
       "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP19572831-1514450643.jpeg",
       "release_year": 2015
     },
@@ -95,7 +95,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Vivo",
-      "price":6777,
+      "price": 6777,
       "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1824220659-1514457791.jpeg",
       "release_year": 2014
     },
@@ -106,7 +106,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Vivo",
-      "price":6777,
+      "price": 6777,
       "image": "https://teja9.kuikr.com/i6/20171228/VB201705171774173-ak_LWBP2838638-1514449668.jpeg",
       "release_year": 2013
     },
@@ -117,7 +117,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Vivo",
-      "price":6777,
+      "price": 6777,
       "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1254669687-1514447957.jpeg",
       "release_year": 2013
     },
@@ -128,7 +128,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Vivo",
-      "price":6777,
+      "price": 6777,
       "image": "https://teja10.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP467812527-1514455524.jpeg",
       "release_year": 2013
     },
@@ -138,7 +138,7 @@
       "author": "Xiaomi Redmi Pro",
       "cover_photo": "",
       "book_name": "3GB RAM | 32GB ROM",
-      "price":9999,
+      "price": 9999,
       "category": "Redmi",
       "image": "https://teja9.kuikr.com/o1/20190425/ak_931746132-1556179530.jpeg",
       "release_year": 2013
@@ -149,7 +149,7 @@
       "author": "Xiaomi Redmi Pro",
       "cover_photo": "",
       "book_name": "3GB RAM | 32GB ROM",
-      "price":9999,
+      "price": 9999,
       "category": "Redmi",
       "image": "https://teja9.kuikr.com/i6/20171228/VB201705171774173-ak_LWBP2838638-1514449668.jpeg",
       "release_year": 2013
@@ -161,7 +161,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Realme",
-      "price":8999,
+      "price": 8999,
       "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1214042358-1514449932.jpeg",
       "release_year": 2019
     },
@@ -172,7 +172,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Realme",
-      "price":8999,
+      "price": 8999,
       "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1214042358-1514449932.jpeg",
       "release_year": 2019
     },
@@ -183,7 +183,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Realme",
-      "price":8999,
+      "price": 8999,
       "image": "https://teja9.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP1214042358-1514449932.jpeg",
       "release_year": 2019
     },
@@ -194,7 +194,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Realme",
-      "price":8999,
+      "price": 8999,
       "image": "https://teja9.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP1070365558-1514456439.jpeg",
       "release_year": 2016
     },
@@ -205,7 +205,7 @@
       "cover_photo": "",
       "book_name": "2GB RAM | 128GB ROM",
       "category": "Realme",
-      "price":8999,
+      "price": 8999,
       "image": "https://teja9.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP1070365558-1514456439.jpeg",
       "release_year": 2016
     },
@@ -216,7 +216,7 @@
       "cover_photo": "",
       "book_name": "8GB RAM | 64GB ROM",
       "category": "Apple",
-      "price":7999,
+      "price": 7999,
       "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP2018785428-1514456122.jpeg",
       "release_year": 2020
     },
@@ -227,7 +227,7 @@
       "cover_photo": "",
       "book_name": "8GB RAM | 64GB ROM",
       "category": "Apple",
-      "price":7999,
+      "price": 7999,
       "image": "https://teja8.kuikr.com/i4/20171228/VB201705171774173-ak_LWBP2018785428-1514456122.jpeg",
       "release_year": 2020
     },
@@ -238,7 +238,7 @@
       "cover_photo": "",
       "book_name": "8GB RAM | 64GB ROM",
       "category": "Apple",
-      "price":7999,
+      "price": 7999,
       "image": "https://teja10.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP527959360-1514461411.jpeg",
       "release_year": 2017
     },
@@ -249,7 +249,7 @@
       "cover_photo": "",
       "book_name": "8GB RAM | 64GB ROM",
       "category": "Apple",
-      "price":7999,
+      "price": 7999,
       "image": "https://teja10.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP527959360-1514461411.jpeg",
       "release_year": 2017
     },
@@ -260,7 +260,7 @@
       "cover_photo": "",
       "book_name": "8GB RAM | 64GB ROM",
       "category": "Apple",
-      "price":7999,
+      "price": 7999,
       "image": "https://teja10.kuikr.com/i5/20171228/VB201705171774173-ak_LWBP527959360-1514461411.jpeg",
       "release_year": 2017
     }
