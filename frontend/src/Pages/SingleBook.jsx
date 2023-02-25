@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 import BookCard from '../Components/ProductPage/BookCard';
 
-
 export default function SingleBook() {
   let {id} = useParams();
   const books = useSelector((store)=>store.bookReducer.books);
@@ -16,6 +15,7 @@ export default function SingleBook() {
   },[])
   return (
   <div style={{width:"100%"}}>
+   
      <h1>Single Product {id}</h1>
      <div style={{width:"30%", margin:"auto"}}>
      <BookCard book={book}/>
