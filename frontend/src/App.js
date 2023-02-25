@@ -22,17 +22,14 @@ function App() {
 
 
       <Navbar />
-       {/*<Electronics />
-      <Category />
-      <Alert />
-      <Reviews />
-      <Electronics /> */}
+
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/products'  element={<MainRoutes/>} />
         <Route path='/productsDetail' element={<Singlepage />}/>
         <Route path='/books/:id' element={<SingleBook />} />
        </Routes>
+
 
     </div>
   );
