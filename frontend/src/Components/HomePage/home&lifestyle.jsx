@@ -98,6 +98,7 @@ export default class Home extends Component {
       ],
     };
     return (
+      <div className="home-main">
       <div
         style={{
           // border: "8px solid red",
@@ -118,6 +119,7 @@ export default class Home extends Component {
             );
           })}
         </Slider>
+      </div>
       </div>
     );
   }

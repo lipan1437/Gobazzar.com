@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/main.css"
 import {
   Box,
   Text,
@@ -11,6 +12,7 @@ import { GiWashingMachine, GiHomeGarage, GiBlackBook } from "react-icons/gi";
 export const Category = () => {
   return (
     <>
+    <div className="home-main">
     <Text marginTop={10} fontSize={"20px"} ml={"10%"}>Browse By Category</Text>
       <Box width={"80%"} height={"140px"}fontSize={"15px"} margin={"auto"}   backgroundColor={"white"}>
         <SimpleGrid columns={{base: 2, md: 3, lg: 6}} spacing={10}>         
@@ -40,6 +42,7 @@ export const Category = () => {
           </Box>
         </SimpleGrid>
       </Box>
+      </div>
     </>
   );
 };

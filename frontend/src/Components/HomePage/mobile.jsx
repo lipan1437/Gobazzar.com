@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "../css/trending.css"
-import { border } from "@chakra-ui/react";
 import { View } from "./view";
 const data = [
   {
@@ -119,25 +118,27 @@ export default class Mobile extends Component {
       ],
     };
     return (
-      <div
-        style={{
-          width: "80%",
-          margin: "auto",
-          paddingTop: "20px",
-          marginTop: "40px",
-          backgroundColor:"white"
-        }}
-      >
-        <p style={{ fontSize: "20px" }}>Mobiles & Tablets</p>
-        <Slider {...settings} >
-          {data.map((e,i) => {
-            return (
-              <div key={i}>
-                <View key={i+1}name={e.name} img={e.img} category={e.category} rs={e.rs} location={e.location}/>
-              </div>
-            );
-          })}
-        </Slider>
+      <div className="home-main">
+        <div
+          style={{
+            width: "80%",
+            margin: "auto",
+            paddingTop: "20px",
+            marginTop: "40px",
+            backgroundColor: "white"
+          }}
+        >
+          <p style={{ fontSize: "20px" }}>Mobiles & Tablets</p>
+          <Slider {...settings} >
+            {data.map((e, i) => {
+              return (
+                <div key={i}>
+                  <View key={i + 1} name={e.name} img={e.img} category={e.category} rs={e.rs} location={e.location} />
+                </div>
+              );
+            })}
+          </Slider>
+        </div>
       </div>
     );
   }

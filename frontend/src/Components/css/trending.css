@@ -1,4 +1,8 @@
 /* Slider */
+.home-main{
+    width: 100%;
+    background-color: #f2f2f2;
+}
 .slick-slider
 {
     position: relative;

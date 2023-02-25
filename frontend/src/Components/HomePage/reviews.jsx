@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/main.css"
 import {
     Box,
     Text,
@@ -6,9 +7,9 @@ import {
     Button,
 } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import { color } from "framer-motion";
 export const Reviews = () => {
     return (
+        <div className="home-main">
         <Box
             width={"60%"}
             marginLeft={"10%"}
@@ -92,5 +93,6 @@ export const Reviews = () => {
                 </SimpleGrid>
             </Box>
         </Box>
+        </div>
     );
 };

@@ -13,6 +13,9 @@ import { Category } from './Components/HomePage/category';
 import { Alert } from './Components/HomePage/alert';
 import { Reviews } from './Components/HomePage/reviews';
 import MainRoutes from './Pages/MainRoutes';
+
+import { Footer } from './Components/HomePage/footer';
+
 import { Route,Routes } from 'react-router-dom';
 import SingleBook from './Pages/SingleBook';
 import HomePage from './Pages/HomePage';
@@ -25,6 +28,19 @@ function App() {
 
 
       <Navbar />
+
+      <Popular />
+      <BuySell />
+      <Trending />
+      <Mobile />
+      <Home />
+      <Electronics />
+      <Category />
+      <Alert />
+      <Reviews />
+      <Topselling/>
+      <Footer />
+
 
       <Routes>
         <Route path='/' element={<HomePage />} />
@@ -39,6 +55,7 @@ function App() {
         <Route path='/admin/posts' element={<Posts />} />
 
         </Routes>
+
 
 
     </div>
