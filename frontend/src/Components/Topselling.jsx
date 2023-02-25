@@ -2,8 +2,11 @@ import React from "react";
 import "./TopsellingStyles.css";
 import Slider from "react-slick";
 import { data } from "./Data";
+import { Link, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 const Topselling = () => {
+  const navigate = useNavigate()
   var settings = {
     dots: true,
     infinite: true,
@@ -26,6 +29,7 @@ const Topselling = () => {
       }
     });
     localStorage.setItem("Item", JSON.stringify(Fill));
+      navigate("/detail")
   };
 
   return (
@@ -37,7 +41,7 @@ const Topselling = () => {
               <h1>Top Selling Brands</h1>
             </div>
             <div className="but">
-              <button>See All</button>
+              <button><Link to='/products'>See All</Link></button>
             </div>
           </div>
           <div className="inside-container2">

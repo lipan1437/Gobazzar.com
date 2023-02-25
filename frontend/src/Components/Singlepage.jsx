@@ -10,12 +10,6 @@ console.log('prodData', prodData);
   return (
     <div className="main">
       <div>
-        <div className="logo">
-          <img
-            src="https://teja9.kuikr.com/i6/20230224/Apple-Iphone-11-PRO-256-Gb-VB201705171774173-ak_LWBP1435306058-1677184049_lg.webp"
-            alt="phone"
-          />
-        </div>
         {prodData.map((el)=>{
           return (
             <div className="logo" key={el.id}>

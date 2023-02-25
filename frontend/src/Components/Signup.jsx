@@ -12,8 +12,8 @@ import {
   Heading,
   Text,
   useColorModeValue,
-  Link,
 } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
@@ -88,7 +88,7 @@ export default function SignupCard() {
             </Stack>
             <Stack pt={6}>
               <Text align={'center'}>
-                Already a user? <Link color={'blue.400'}>Login</Link>
+                Already a user? <Link to='/login'><Text color={'blue.400'}>Login</Text></Link>
               </Text>
             </Stack>
           </Stack>

@@ -1,11 +1,12 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Topselling from './Components/Topselling';
+import Signup from './Components/Signup'
+import Login from './Components/Login';
 import { Popular } from './Components/HomePage/popular';
 import { BuySell } from './Components/HomePage/buy&sell';
 import Trending  from './Components/HomePage/trandingadd';
 import Mobile from './Components/HomePage/mobile';
-// import Home from './Components/HomePage/home&lifestyle';
 import Electronics from './Components/HomePage/electronics';
 import Singlepage from './Components/Singlepage';
 import { Category } from './Components/HomePage/category';
@@ -28,7 +29,11 @@ function App() {
         <Route path='/products'  element={<MainRoutes/>} />
         <Route path='/productsDetail' element={<Singlepage />}/>
         <Route path='/books/:id' element={<SingleBook />} />
-       </Routes>
+        <Route path='/topselling' element={<Topselling />} />
+        <Route path='/detail' element={<Singlepage />} />
+        <Route path='/signUp' element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        </Routes>
 
 
     </div>

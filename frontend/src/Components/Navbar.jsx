@@ -113,8 +113,9 @@ export default function Navbar() {
                <p ><Link to="/products">MOBILES <ChevronDownIcon /></Link></p>
                <div class="megamenu">
                     <ul>
-                         <li><Link to="/products">Mobile Phones<Center><IoMdArrowDropright /></Center></Link></li>
-                         <li>Used Mobiles</li>
+                        {/* /products */}
+                         <li><Link to="/topselling">Mobile Phones<Center><IoMdArrowDropright /></Center></Link></li>
+                         <li><Link to='/products'> Used Mobiles</Link> </li>
                     </ul>
                     <ul>
                           <li>Top Brands (Used/New)<Center><IoMdArrowDropright /></Center></li>
