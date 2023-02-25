@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "../css/trending.css";
-import { border } from "@chakra-ui/react";
 import { View } from "./view";
 
 const data = [

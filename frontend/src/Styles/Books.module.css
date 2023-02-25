@@ -1,0 +1,16 @@
+.books-filter-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.filter-component{
+    width: 20%;
+    border-right: 1px solid gray;
+}
+
+.books-list{
+    width: 80%;
+    /* display: flex; */
+}
