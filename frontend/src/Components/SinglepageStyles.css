@@ -3,13 +3,16 @@
   width: 500px;
   gap: 250px;
   padding: 10px;
+
 }
 .logo{
-    width: 200px;
+    width: 50%;
     margin-top: 20px;
-    margin-left: 40%;
+    margin-left: 20%;
 }
-
+.main{
+    width: 100%;
+}
 
 
 .heading h1{
@@ -26,7 +29,16 @@ ul {
 }
 .list {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+}
+.inside_list{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 40%;
+    padding: 10px;
 }
 .main{
     display: flex;
@@ -55,7 +67,7 @@ ul {
     color: #fefefe;
     padding: 10px;
 }
-.white button{
+.normal button{
     border:2px solid #007db2 ;
     color:  #007db2 ;
     padding: 8px;
@@ -74,3 +86,68 @@ ul {
     font-weight: 600;
     opacity: 0.8;
 }
+
+ /* Responsive */
+
+ @media screen and (max-width:900px) {
+    .main{
+   width: 100%;
+    }
+  .list{
+    margin-left: 50px;
+    display: grid; 
+    flex-wrap: wrap;
+  } 
+ .inside_list{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    gap:150px;
+ }
+ .vl{
+    display: none;
+ }
+.heading{
+    margin-left: 20%;
+}
+ .des{
+    display: flex;
+    margin-left: 15%;
+    flex-wrap: wrap;
+    padding: 0 5px 5px 0;
+ }
+ .logo{
+    width: 50%;
+    margin-top: 20px;
+}
+.used{
+    display: grid;
+    gap: 10px;
+}
+.inside_right_heading{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+ .call{
+    display: grid;
+    gap: 1px;
+ }
+ .call button {
+    width: 50%;
+ }
+ }
+
+ @media screen and (max-width:700px) {
+     .inside_right_heading{
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .main{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+    }
