@@ -1,29 +1,22 @@
-import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom'
-import BookCard from '../Components/ProductPage/BookCard';
+import React from "react";
+import "./SinglepageStyles.css";
 
-export default function SingleBook() {
-  let {id} = useParams();
-  const books = useSelector((store)=>store.bookReducer.books);
-  const [book, setBook] = useState({})
+const Singlepage = () => {
 
 
-  useEffect(()=>{
-    let bookData = books.find((el)=>el.id === +id);
-    bookData && setBook(bookData)
-  },[])
-
-  
+let prodData = JSON.parse(localStorage.getItem("Item")) || [] ;
+console.log('prodData', prodData);
 
   return (
-
     <div className="main">
       <div>
-
-        <div className="logo">
-              <img  src={book.image} alt="phone"/> 
+        {prodData.map((el)=>{
+          return (
+            <div className="logo" key={el.id}>
+              <img  src={el.src} alt="phone"/> 
             </div>
+          )
+        })}
         <div className="heading">
           <h1>Ad Details</h1>
         </div>
@@ -75,15 +68,22 @@ export default function SingleBook() {
         </div>
       </div>
       <div className="right_heading">
-         <div  className="used">
+              {prodData.map((el)=>{
+          return (
+            <div  className="used" key={el.id}>
                 <span>USED</span>
-                <li>{book.author}</li>
+                <li>{el.heading}</li>
             </div>
-            <div className="inside_right_heading">
-               <p>{book.book_name}</p>
-               <span>₹{book.price}</span>
+          )
+        })}
+         {prodData.map((el)=>{
+          return (
+            <div className="inside_right_heading" key={el.id}>
+               <p>{el.title}</p>
+               <span>₹{el.price}</span>
             </div>
-
+          )
+        })}
         <div className="call">
           <div className="color">
             <button>CALL</button>
@@ -95,6 +95,6 @@ export default function SingleBook() {
       </div>
     </div>
   );
-}
+};
 
-
+export default Singlepage;

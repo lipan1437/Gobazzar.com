@@ -11,6 +11,8 @@ import {
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import styles from "../../Styles/Products.module.css";
+
+
 export default function SideBar() {
   const [searchParams, setSearchParams] = useSearchParams();
   console.log(searchParams);
@@ -57,16 +59,16 @@ export default function SideBar() {
         Mobile Phones
       </Heading>
       {/* <h3>Filter By</h3> */}
-      <Accordion allowToggle>
+      <Accordion allowToggle className={styles.Accordion}>
         <AccordionItem>
-          <h2>
+          <h6>
             <AccordionButton>
-              <Box as="span" flex="1" textAlign="left">
+              <Box as="span" flex="1" fontSize={"20px"} textAlign="left">
                 Category
               </Box>
               <AccordionIcon/>
             </AccordionButton>
-          </h2>
+          </h6>
           <AccordionPanel pb={4}>
             <div>
               <div className={styles.filtertitle}>
@@ -111,7 +113,7 @@ export default function SideBar() {
         <AccordionItem>
           <h2>
             <AccordionButton>
-              <Box as="span" flex="1" textAlign="left">
+              <Box as="span" flex="1" fontSize={"20px"} textAlign="left">
                 Sort By Released
               </Box>
               <AccordionIcon />

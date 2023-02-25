@@ -1,0 +1,153 @@
+.heading {
+  display: flex;
+  width: 500px;
+  gap: 250px;
+  padding: 10px;
+
+}
+.logo{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.main{
+    width: 100%;
+}
+
+
+.heading h1{
+    font-size: large;
+    font-weight: 500;
+}
+.vl {
+  border-left: 1px solid #d5e4e4d2;
+  height: 250px;
+}
+ul {
+  list-style-type: none;
+  line-height: 50px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+}
+.inside_list{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 40%;
+    padding: 10px;
+}
+.main{
+    display: flex;
+}
+.bold {
+   font-weight:600 ;
+}
+.right_heading{
+    padding: 20px;
+    height: 500px;
+}
+.right_heading p,span{
+    font-size: 25px;
+    font-weight: 500;
+}
+.call{
+    display: flex;
+    gap: 20px;
+}
+.call button{
+    width: 150px;
+    margin-top: 50px;
+}
+.color button{
+    background:linear-gradient(#00c8cf,#007db2 );
+    color: #fefefe;
+    padding: 10px;
+}
+.normal button{
+    border:2px solid #007db2 ;
+    color:  #007db2 ;
+    padding: 8px;
+    font-weight: 800px;
+}
+.used{
+    display: flex;
+    gap: 10px;
+}
+.used span{
+ color: green;
+ font-size: 15px;
+}
+.used li{
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+ /* Responsive */
+
+ @media screen and (max-width:900px) {
+    .main{
+   width: 100%;
+    }
+  .list{
+    margin-left: 50px;
+    display: grid; 
+    flex-wrap: wrap;
+  } 
+ .inside_list{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    gap:150px;
+ }
+ .vl{
+    display: none;
+ }
+.heading{
+    margin-left: 20%;
+}
+ .des{
+    display: flex;
+    margin-left: 15%;
+    flex-wrap: wrap;
+    padding: 0 5px 5px 0;
+ }
+ .logo{
+    width: 50%;
+    margin-top: 20px;
+}
+.used{
+    display: grid;
+    gap: 10px;
+}
+.inside_right_heading{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+ .call{
+    display: grid;
+    gap: 1px;
+ }
+ .call button {
+    width: 50%;
+ }
+ }
+
+ @media screen and (max-width:700px) {
+     .inside_right_heading{
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .main{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+    }
