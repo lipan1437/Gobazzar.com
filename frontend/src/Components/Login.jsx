@@ -6,18 +6,20 @@ import {
     Input,
     Checkbox,
     Stack,
-    Link,
+    useToast,
     Button,
     Heading,
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
   import { useState } from 'react';
+  import {Link} from "react-router-dom"
   
   export default function Login() {
 
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
+    const toast=useToast()
   
   
     const handleLogin=()=>{
@@ -35,10 +37,27 @@ import {
       }).then(res=>res.json())
       .then(res=>{
         
-        console.log(res)
+        toast({
+          position: 'top-right',
+          title: 'Login Successful ✔',
+          description: `Thank You for Login`,
+          status: 'success',
+          duration: 5000,
+          isClosable: true,
+      })
         localStorage.setItem("token",res.token)
       })
-      .catch(err=>console.log(err))
+      .catch((err)=>{console.log(err)
+      toast({
+        position: 'top-right',
+        title: 'Login Failed ✔',
+        description: `Please Signup`,
+        status: 'warning',
+        duration: 5000,
+        isClosable: true,
+    })
+  })
+  
     }
     return (
       <Flex
@@ -86,7 +105,11 @@ import {
                   Log in
                 </Button>
               </Stack>
+
             </Stack>
+            <Text align={'center'}>
+                Already a user? <Link to='/signup'><Text color={'blue.400'}>Sign up</Text></Link>
+              </Text>
           </Box>
         </Stack>
       </Flex>
