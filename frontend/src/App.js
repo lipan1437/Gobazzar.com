@@ -3,15 +3,9 @@ import Navbar from './Components/Navbar';
 import Topselling from './Components/Topselling';
 import Signup from './Components/Signup'
 import Login from './Components/Login';
-import { Popular } from './Components/HomePage/popular';
-import { BuySell } from './Components/HomePage/buy&sell';
-import Trending  from './Components/HomePage/trandingadd';
-import Mobile from './Components/HomePage/mobile';
-import Electronics from './Components/HomePage/electronics';
+
 import Singlepage from './Components/Singlepage';
-import { Category } from './Components/HomePage/category';
-import { Alert } from './Components/HomePage/alert';
-import { Reviews } from './Components/HomePage/reviews';
+
 import MainRoutes from './Pages/MainRoutes';
 
 import { Footer } from './Components/HomePage/footer';
@@ -21,7 +15,7 @@ import SingleBook from './Pages/SingleBook';
 import HomePage from './Pages/HomePage';
 import CreatePost from './Components/AdminPage/CreatePost';
 import Posts from './Components/AdminPage/Posts'
-import Home from './Components/HomePage/home&lifestyle';
+
 
 function App() {
   return (
@@ -29,34 +23,20 @@ function App() {
 
 
       <Navbar />
-
-      <Popular />
-      <BuySell />
-      <Trending />
-      <Mobile />
-      <Home />
-      <Electronics />
-      <Category />
-      <Alert />
-      <Reviews />
-      <Topselling/>
-      <Footer />
-
-
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/products'  element={<MainRoutes/>} />
         <Route path='/productsDetail' element={<Singlepage />}/>
         <Route path='/books/:id' element={<SingleBook />} />
         <Route path='/topselling' element={<Topselling />} />
-        <Route path='/detail' element={<Singlepage />} />
+        {/* <Route path='/detail' element={<Singlepage />} /> */}
         <Route path='/signUp' element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path='/admin/createPost' element={<CreatePost />} />
         <Route path='/admin/posts' element={<Posts />} />
         </Routes>
 
-
+        <Footer />
 
     </div>
   );
