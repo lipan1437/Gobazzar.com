@@ -21,6 +21,7 @@ import SingleBook from './Pages/SingleBook';
 import HomePage from './Pages/HomePage';
 import CreatePost from './Components/AdminPage/CreatePost';
 import Posts from './Components/AdminPage/Posts'
+import Home from './Components/HomePage/home&lifestyle';
 
 function App() {
   return (
@@ -53,7 +54,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path='/admin/createPost' element={<CreatePost />} />
         <Route path='/admin/posts' element={<Posts />} />
-
         </Routes>
 
 

@@ -16,6 +16,11 @@ const CreatePost = () => {
                price,
                image
         }
+        setTitle("")
+        setPost("")
+        setCategory("")
+        setPrice("")
+        setImg("")
         fetch("http://localhost:8080/posts/create",{
             method:"POST",
             body:JSON.stringify(payload),

@@ -29,14 +29,7 @@ const deletePost =(postID)=>{
     .catch(err=>console.log(err))
 }
     
-    // const updatePost =(userID)=>{
-    //    fetch(`https://rich-gold-agouti-sari.cyclic.app/posts/update/${userID}`,{
-    //      method:"PATCH",
-    //      headers:{
-    //         "Authorization":localStorage.getItem("token")
-    //      }
-    //    })
-    // }
+
   return (
     <div>
         <h3>All Posts you can see over here</h3>
