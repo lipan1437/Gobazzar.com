@@ -141,19 +141,19 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: gray;
     border: none;
     outline: none;
-    background: transparent;
+    background: black;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: white;
     outline: none;
-    background: transparent;
+    background: gray;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -247,7 +247,7 @@
 
     width: 20px;
     height: 20px;
-    margin: 0 5px;
+    margin: 0 10px;
     padding: 0;
 
     cursor: pointer;
@@ -259,9 +259,9 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+    width: 5px;
+    height: 5px;
+    padding: 3px;
 
     cursor: pointer;
 
