@@ -15,8 +15,8 @@ export default function BookCard({book}){
             <p>{book.title}</p>
           </div>
           <div className='info__price'>
-            <p>{book.price}</p>
-            <p>{book.post}</p>
+            <p>₹{book.price}</p>
+            <p>{book.category}</p>
           </div>
           <div className='info__btn'>
             <button>
@@ -24,7 +24,7 @@ export default function BookCard({book}){
               View Details
             </Link>
             </button>
-            <p>{book.category}</p>
+            <p>{book.post}</p>
           </div>
         </div>
     </div>
@@ -46,7 +46,7 @@ const DivWrapper = styled.div`
         }
       }
       .info{
-        height:16vh;
+        height:25vh;
         width:100%;
         padding:2%;
           &__title{
@@ -62,7 +62,7 @@ const DivWrapper = styled.div`
           &__price{
             display:flex;
             padding:1% 2% 1% 2%;
-            justify-content:space-between;
+            flex-direction:column;
           }
           &__btn{
             display:flex;

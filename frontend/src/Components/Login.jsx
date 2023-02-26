@@ -27,17 +27,30 @@ import {
         email,
         password
       }
-  
-      fetch(" https://alive-foal-long-johns.cyclic.app/users/login",{
+  console.log("payload",payload)
+      fetch("https://alive-foal-long-johns.cyclic.app/users/login",{
         method:"POST",
         body:JSON.stringify(payload),
         headers:{
           "Content-type":"application/json"
         }
-      }).then(res=>res.json())
-      .then((res)=>{
-        
-        toast({
+      }).then((res) =>
+        res = res.json())
+      .then((res) => {
+        if(res.msg === "wrong credentials"){
+          toast({
+            position: 'top-right',
+            title: 'Login Not Sucessful',
+            description: `Please Sign up Firstly`,
+            status: 'warning',
+            duration: 5000,
+            isClosable: true,
+        })
+        navigate('/signUp');
+        }
+        else{
+        localStorage.setItem("token",res.token)
+          toast({
           position: 'top-right',
           title: 'Login Successful ✔',
           description: `Thank You for Login`,
@@ -45,20 +58,21 @@ import {
           duration: 5000,
           isClosable: true,
       })
-        localStorage.setItem("token",res.token)
-        // navigate("/")
+      navigate('/')
+    }
       })
-      .catch((err)=>{console.log(err)
-      toast({
-        position: 'top-right',
-        title: 'Login Failed ✔',
-        description: `Please Signup`,
-        status: 'warning',
-        duration: 5000,
-        isClosable: true,
-    })
-    // navigate("/signUp")
-  })
+      .catch((err) => {
+        console.log(err)
+        toast({
+          position: 'top-right',
+          title: 'Login Not Sucessful',
+          description: `Please Sign up Firstly`,
+          status: 'warning',
+          duration: 5000,
+          isClosable: true,
+      })
+      navigate('/signUp');
+      })
   
     }
     return (
@@ -69,10 +83,8 @@ import {
         bg={useColorModeValue('gray.50', 'gray.800')}>
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Stack align={'center'}>
-            <Heading fontSize={'4xl'}>Login in to your Quikr account</Heading>
-            <Text fontSize={'lg'} color={'gray.600'}>
-              to enjoy all of our cool <Link color={'blue.400'}>features</Link> ✌️
-            </Text>
+            <Heading fontSize={'4xl'}>Login</Heading>
+           
           </Stack>
           <Box
             rounded={'lg'}
@@ -82,11 +94,11 @@ import {
             <Stack spacing={4}>
               <FormControl id="email">
                 <FormLabel> Enter Your Email </FormLabel>
-                <Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                <Input type="email" onChange={(e)=>setEmail(e.target.value)}/>
               </FormControl>
               <FormControl id="password">
                 <FormLabel>Enter Your Password</FormLabel>
-                <Input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                <Input type="password"  onChange={(e)=>setPassword(e.target.value)}/>
               </FormControl>
               <Stack spacing={10}>
                 <Stack

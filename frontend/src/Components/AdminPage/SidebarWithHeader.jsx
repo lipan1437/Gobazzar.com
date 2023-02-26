@@ -38,9 +38,10 @@ import {
 
 
 const LinkItems = [
-  { name: 'Home', icon: FiHome },
-  { name: 'Inventory', icon: FiTrendingUp },
-  { name: 'Users', icon: FiCompass },
+  { name: 'Home', icon: FiHome ,link:"/admin/posts"},
+  { name: 'Inventory', icon: FiTrendingUp,link:"/admin/createPost" },
+  { name: 'Users', icon: FiCompass 
+},
   { name: 'Favourites', icon: FiStar },
   { name: 'Settings', icon: FiSettings },
 ];
@@ -96,7 +97,8 @@ const SidebarContent = ({ onClose, ...rest }) => {
       </Flex>
       {LinkItems.map((link) => (
         <NavItem key={link.name} icon={link.icon}>
-          {link.name}
+          <Send to={link.link} >
+          {link.name}</Send>
         </NavItem>
       ))}
     </Box>

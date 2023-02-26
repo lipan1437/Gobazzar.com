@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {Box, Center, SimpleGrid,Heading,Image, Button, Select} from "@chakra-ui/react"
+import SidebarWithHeader from './SidebarWithHeader'
 
 const Posts = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(()=>{
-         fetch("http://localhost:8080/posts",{
+         fetch("https://alive-foal-long-johns.cyclic.app/posts",{
             headers:{
                 // "Authorization":localStorage.getItem("token")
                 "Content-type":"application/json"
@@ -20,7 +21,7 @@ const Posts = () => {
     },[posts])
     console.log(posts)
 const deletePost =(postID)=>{
-    fetch(`http://localhost:8080/posts/delete/${postID}`,{
+    fetch(`https://alive-foal-long-johns.cyclic.app/posts/delete/${postID}`,{
         method:"DELETE",
         // headers:{
         //     "Authorization":localStorage.getItem("token")
@@ -32,6 +33,8 @@ const deletePost =(postID)=>{
 
   return (
     <div>
+    <SidebarWithHeader />
+    <div style={{zIndex:"-100",position:"absolute",width:"80%",margin:"0% 0% 0% 20%"}}>
         <h3>All Posts you can see over here</h3>
         <hr />
         <div>
@@ -52,6 +55,7 @@ const deletePost =(postID)=>{
           </Box>      
           )):<h2>Not found</h2>}
         </SimpleGrid>
+        </div>
         </div>
     </div>
   )

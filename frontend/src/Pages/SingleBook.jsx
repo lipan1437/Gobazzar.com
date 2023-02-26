@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
-
+import Navbar from '../Components/Navbar'
+import {Footer} from '../Components/HomePage/footer'
 
 export default function SingleBook() {
   let {id} = useParams();
@@ -20,7 +21,8 @@ export default function SingleBook() {
   
 
   return (
-
+    <>
+    <Navbar />
     <div className="main">
       <div>
 
@@ -97,6 +99,8 @@ export default function SingleBook() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

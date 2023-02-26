@@ -1,6 +1,7 @@
-import { Button, FormControl, FormLabel, Heading, Input } from '@chakra-ui/react'
+import { Button, FormControl, FormLabel, Heading, Input,useToast } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import SidebarWithHeader from './SidebarWithHeader'
+import { useNavigate } from 'react-router-dom'
 
 const CreatePost = () => {
     const[title,setTitle] = useState("")
@@ -8,7 +9,21 @@ const CreatePost = () => {
     const [category, setCategory] = useState("")
     const [image, setImg] = useState("")
     const[price, setPrice] = useState("")
+   const navigate = useNavigate()
+   const toast = useToast()
+
     const handleSubmit = () =>{
+        if(title === "" || post === "" || category === "" || price === "" || image === ""){
+            toast({
+                position: 'top-right',
+                title: 'Please Enter All Details',
+                description: `Fill Properly`,
+                status: 'warning',
+                duration: 5000,
+                isClosable: true,
+            })
+            return;
+        }
         const payload={
                title,
                post,
@@ -21,16 +36,40 @@ const CreatePost = () => {
         setCategory("")
         setPrice("")
         setImg("")
-        fetch("http://localhost:8080/posts/create",{
+        fetch("https://alive-foal-long-johns.cyclic.app/posts/create",{
             method:"POST",
             body:JSON.stringify(payload),
             headers:{
                 "Content-type":"application/json",
                 // "Authorization": localStorage.getItem("token")
             }
-        }).then(res=>res.json())
-        .then(res=>console.log(res))
-        .catch(err=>console.log(err))
+        }).then(res=>{
+            console.log(res)
+            toast({
+                position: 'top-right',
+                title: 'Added Product Succefully',
+                description: `Thank You For Adding Post`,
+                status: 'success',
+                duration: 5000,
+                isClosable: true,
+            })
+            navigate("/admin/posts")
+    })
+        .then((res) =>{
+            console.log(res)
+            
+        })
+        .catch((err)=>{
+            console.log(err)
+            toast({
+                position: 'top-right',
+                title: 'Somthing Wrong Will be happen',
+                description: `Sorry for that`,
+                status: 'warning',
+                duration: 5000,
+                isClosable: true,
+            })
+        })
     }
   return (
     <div>

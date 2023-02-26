@@ -3,7 +3,8 @@ import "./TopsellingStyles.css";
 import Slider from "react-slick";
 import { data } from "./Data";
 import { Link, useNavigate } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import { Footer } from "./HomePage/footer";
 
 const Topselling = () => {
   const navigate = useNavigate()
@@ -33,6 +34,8 @@ const Topselling = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="main">
       <div className="container">
         <div className="shadow">
@@ -231,6 +234,8 @@ const Topselling = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

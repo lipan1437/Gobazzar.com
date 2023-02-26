@@ -29,7 +29,8 @@ console.log(location)
     },[location.search])
   return (
     <DivWrapper>
-        {books.length>0 && books.map((el)=>{
+      {!books ? <h1>Produt Not Found Please Wait for Some Secound</h1> :
+        books && books.length>0 && books.map((el)=>{
             return <BookCard key={el.id} book={el}/>
         })}
     </DivWrapper>
@@ -40,7 +41,7 @@ console.log(location)
 const DivWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 10px;
+    gap:15px
 
     @media only screen and (min-width : 900px) and (max-width : 1100px){
       grid-template-columns: repeat(3,1fr);
