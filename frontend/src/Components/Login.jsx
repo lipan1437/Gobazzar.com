@@ -13,14 +13,14 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import { useState } from 'react';
-  import {Link} from "react-router-dom"
+  import {Link,useNavigate} from "react-router-dom"
   
   export default function Login() {
 
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
     const toast=useToast()
-  
+    const navigate = useNavigate()
   
     const handleLogin=()=>{
       const payload={
@@ -28,14 +28,14 @@ import {
         password
       }
   
-      fetch("http://localhost:8080/users/login",{
+      fetch(" https://alive-foal-long-johns.cyclic.app/users/login",{
         method:"POST",
         body:JSON.stringify(payload),
         headers:{
-          "content-type":"application/json"
+          "Content-type":"application/json"
         }
       }).then(res=>res.json())
-      .then(res=>{
+      .then((res)=>{
         
         toast({
           position: 'top-right',
@@ -46,6 +46,7 @@ import {
           isClosable: true,
       })
         localStorage.setItem("token",res.token)
+        // navigate("/")
       })
       .catch((err)=>{console.log(err)
       toast({
@@ -56,6 +57,7 @@ import {
         duration: 5000,
         isClosable: true,
     })
+    // navigate("/signUp")
   })
   
     }

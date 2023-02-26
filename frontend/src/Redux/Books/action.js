@@ -16,11 +16,11 @@ export const getBooksFailureAction = () =>{
 const editBookSuccess = () =>{
   return {type:EDIT_BOOK_SUCCESS}
 }
-
+// http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/books
 //common are all get request
 export const getBooks = (param={})=>(dispatch) =>{
       dispatch(getBooksRequestAction())
-      axios.get(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/books`,param).then((res)=>{
+      axios.get(`https://alive-foal-long-johns.cyclic.app/posts`,param).then((res)=>{
         console.log(res)
         dispatch(getBooksSuccessAction(res.data))
       }).catch((err)=>{
@@ -29,7 +29,8 @@ export const getBooks = (param={})=>(dispatch) =>{
 }
 
 export const editBook =(id,bookData) =>(dispatch)=>{
-     return axios.patch(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/books/${id}`,bookData).then(()=>{
+  // console.log(id)
+     return axios.patch(`http://localhost:8080/posts/${id}`,bookData).then(()=>{
          dispatch(editBookSuccess())
       })
 }

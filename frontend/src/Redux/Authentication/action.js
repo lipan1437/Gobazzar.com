@@ -18,7 +18,7 @@ const loginFailureAction = () =>{
 //function currying here is use
 export const login = (userData) =>(dispatch)=>{
     dispatch(loginRequestAction())
-   return axios.post("https://reqres.in/api/login", userData).then((res)=>{
+   return axios.post("https://alive-foal-long-johns.cyclic.app/users/login", userData).then((res)=>{
         console.log(res)
         dispatch(loginSuccessAction(res.data.token))
     }).catch((err)=>{

@@ -22,7 +22,6 @@ function App() {
     <div className="App">
 
 
-      <Navbar />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/products'  element={<MainRoutes/>} />
@@ -34,9 +33,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path='/admin/createPost' element={<CreatePost />} />
         <Route path='/admin/posts' element={<Posts />} />
+        <Route path="*" element={<h3>Page Not Found</h3>} />
         </Routes>
 
-        <Footer />
 
     </div>
   );

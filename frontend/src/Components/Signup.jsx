@@ -37,7 +37,7 @@ export default function Signup() {
       method:"POST",
       body:JSON.stringify(payload),
       headers:{
-        "content-type":"application/json"
+        "Content-type":"application/json"
       }
     }).then(res=>res.json())
     .then(res=>console.log(res))

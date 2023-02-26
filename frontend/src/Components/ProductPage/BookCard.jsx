@@ -12,19 +12,19 @@ export default function BookCard({book}){
         </div>
         <div className='info'>
           <div className='info__title'>
-            <p>{book.book_name}</p>
+            <p>{book.title}</p>
           </div>
           <div className='info__price'>
             <p>{book.price}</p>
-            <p>{book.category}</p>
+            <p>{book.post}</p>
           </div>
           <div className='info__btn'>
             <button>
-            <Link to={`/books/${book.id}`}>
+            <Link to={`/books/${book._id}`}>
               View Details
             </Link>
             </button>
-            <p>{book.release_year}</p>
+            <p>{book.category}</p>
           </div>
         </div>
     </div>

@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
-import BookCard from '../Components/ProductPage/BookCard';
+
 
 export default function SingleBook() {
   let {id} = useParams();
   const books = useSelector((store)=>store.bookReducer.books);
   const [book, setBook] = useState({})
 
-
+  // console.log(id)
   useEffect(()=>{
-    let bookData = books.find((el)=>el.id === +id);
+    let bookData = books.find((el)=>{
+     return  el._id == id
+      
+  });
     bookData && setBook(bookData)
   },[])
 
@@ -77,10 +80,10 @@ export default function SingleBook() {
       <div className="right_heading">
          <div  className="used">
                 <span>USED</span>
-                <li>{book.author}</li>
+                <li>{book.title}</li>
             </div>
             <div className="inside_right_heading">
-               <p>{book.book_name}</p>
+               <p>{book.post}</p>
                <span>₹{book.price}</span>
             </div>
 
