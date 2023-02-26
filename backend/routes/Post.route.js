@@ -13,6 +13,16 @@ postRouter.get("/",async(req,res)=>{
     }
 })
 
+postRouter.get("/:id",async(req,res) => {
+   let id = req.params.id;
+    try{
+      const data =await PostModel.findById(id)
+      res.send(data)
+    }
+    catch(err){
+        res.send({Message:res.message})
+    }
+})
 
 postRouter.post("/create",async(req,res)=>{
     const payload = req.body;
