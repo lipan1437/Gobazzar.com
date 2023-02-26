@@ -40,8 +40,7 @@ import {
 const LinkItems = [
   { name: 'Home', icon: FiHome ,link:"/admin/posts"},
   { name: 'Inventory', icon: FiTrendingUp,link:"/admin/createPost" },
-  { name: 'Users', icon: FiCompass 
-},
+  { name: 'Users', icon: FiCompass ,link:"/admin/user"},
   { name: 'Favourites', icon: FiStar },
   { name: 'Settings', icon: FiSettings },
 ];

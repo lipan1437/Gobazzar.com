@@ -96,7 +96,7 @@ export default function Navbar() {
                     <p><Link to='/login'>Login/Register</Link></p>
                 </div>
                 <div className='navbar232'>
-                    <Button  colorScheme="yellow" borderRadius={'0px'}>Admin Page</Button>
+                    <Button  colorScheme="yellow" borderRadius={'0px'}><Link to='/admin'>Admin Page</Link></Button>
                 </div>
             </div>
         </div>
@@ -445,7 +445,7 @@ function DrawerExample() {
                 </div>
                 <div>
                     <div><RiAdminFill /></div>
-                    <p>Admin Page</p>
+                    <p><Link to='/admin'>Admin Page</Link></p>
                 </div>
                 <div>
                     <div><FaBuysellads/></div>

@@ -9,8 +9,13 @@ const CreatePost = () => {
     const [category, setCategory] = useState("")
     const [image, setImg] = useState("")
     const[price, setPrice] = useState("")
-   const navigate = useNavigate()
+   const navigate = useNavigate();
    const toast = useToast()
+
+   const value = localStorage.getItem("admin");
+   if(value !== "adminPage"){
+     navigate("/admin")
+   }
 
     const handleSubmit = () =>{
         if(title === "" || post === "" || category === "" || price === "" || image === ""){

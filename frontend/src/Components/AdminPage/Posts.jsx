@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import {Box, Center, SimpleGrid,Heading,Image, Button, Select} from "@chakra-ui/react"
 import SidebarWithHeader from './SidebarWithHeader'
 
 const Posts = () => {
     const [posts, setPosts] = useState([])
+    const navigate = useNavigate()
 
+    const value = localStorage.getItem("admin");
+    if(value !== "adminPage"){
+      navigate("/admin")
+    }
     useEffect(()=>{
          fetch("https://alive-foal-long-johns.cyclic.app/posts",{
             headers:{
@@ -14,7 +19,7 @@ const Posts = () => {
             }
          }).then(res=>res.json())
          .then(res=>{
-            console.log(res)
+            // console.log(res)
             setPosts(res)
          })
          .catch(err=>console.log(err))
@@ -33,6 +38,7 @@ const deletePost =(postID)=>{
 
   return (
     <div>
+
     <SidebarWithHeader />
     <div style={{zIndex:"-100",position:"absolute",width:"80%",margin:"0% 0% 0% 20%"}}>
         <h3>All Posts you can see over here</h3>
@@ -57,9 +63,12 @@ const deletePost =(postID)=>{
         </SimpleGrid>
         </div>
         </div>
+
     </div>
   )
 }
 
 export default Posts
+
+
 
