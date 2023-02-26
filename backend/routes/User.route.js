@@ -47,6 +47,15 @@ userRouter.post("/register", async (req, res) => {
   }
 });
 
+userRouter.get("/register/detail",async(req,res) => {
+  try{
+    const post = await UserModel.find()
+        res.send(post)
+  }
+  catch(err){
+    res.send({Message:err.message})
+  }
+})
 userRouter.post("/login", async (req, res) => {
 
   const { email ,password} = req.body;
@@ -98,6 +107,19 @@ userRouter.post("/login", async (req, res) => {
 
 });
 
-
+userRouter.delete("/delete/:id",async(req,res)=>{
+  // const payload = req.body;
+  const id = req.params.id;
+  // const post = await PostModel.findOne({"_id":id});
+  // const userID_in_post = post.userID;
+  // const userID_making_req = req.body.userID;
+  try {
+      await UserModel.findByIdAndDelete({"_id":id})
+      res.send("Deleted the post")
+  } catch (error) {
+      console.log(error)
+      res.send({"msg":"Something went wrong"})
+  }
+})
 
 module.exports = { userRouter };

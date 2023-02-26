@@ -10,7 +10,7 @@
 
 
 ## WORK 
- HOME PAGE - Ritik,
+ HOME PAGE,Footer - Ritik,
  NAVBAR and single Page - Sejal,
  LOGIN/SIGNUP - Md Arif,
  PRODUCT PAGE - Bhirav, 
