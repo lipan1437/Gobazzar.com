@@ -17,8 +17,32 @@ import {
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
-export default function SignupCard() {
+export default function Signup() {
   const [showPassword, setShowPassword] = useState(false);
+  const [fname,setFname]=useState("")
+  const [lname,setLname]=useState("")
+  const [email,setEmail]=useState("")
+  const [password,setPassword]=useState("")
+
+
+  const handleSignup=()=>{
+    const payload={
+      fname,
+      lname,
+      email,
+      password
+    }
+
+    fetch("http://localhost:8080/users/register",{
+      method:"POST",
+      body:JSON.stringify(payload),
+      headers:{
+        "content-type":"application/json"
+      }
+    }).then(res=>res.json())
+    .then(res=>console.log(res))
+    .catch(err=>console.log(err))
+  }
 
   return (
     <Flex
@@ -45,22 +69,24 @@ export default function SignupCard() {
               <Box>
                 <FormControl id="firstName" isRequired>
                   <FormLabel>First Name</FormLabel>
-                  <Input type="text" />
+                  <Input type="text" value={fname} onChange={(e)=>setFname(e.target.value)}/>
                 </FormControl>
               </Box>
               <Box>
                 <FormControl id="lastName">
                   <FormLabel>Last Name</FormLabel>
-                  <Input type="text" />
+                  <Input type="text" value={lname} onChange={(e)=>setLname(e.target.value)}/>
                 </FormControl>
               </Box>
             </HStack>
             <FormControl id="email" isRequired>
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
             </FormControl>
             <FormControl id="password" isRequired>
               <FormLabel>Password</FormLabel>
+              <Input type="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+
               <InputGroup>
                 <Input type={showPassword ? 'text' : 'password'} />
                 <InputRightElement h={'full'}>
@@ -76,6 +102,7 @@ export default function SignupCard() {
             </FormControl>
             <Stack spacing={10} pt={2}>
               <Button
+              onClick={handleSignup}
                 loadingText="Submitting"
                 size="lg"
                 bg={'blue.400'}
