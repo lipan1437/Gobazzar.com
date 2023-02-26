@@ -4,7 +4,7 @@ import gobazaar from '../gobazaar.png'
 import {BiShoppingBag} from 'react-icons/bi'
 import {BsSearch,BsPerson,BsFillBagFill} from 'react-icons/bs'
 import {VscDesktopDownload} from 'react-icons/vsc'
-import {MdOutlineLocalOffer,MdOutlinePayment,MdMiscellaneousServices} from 'react-icons/md'
+import {MdOutlineLocalOffer,MdMiscellaneousServices} from 'react-icons/md'
 import {IoStorefrontOutline,IoChatbubblesSharp} from 'react-icons/io5'
 import {IoMdArrowDropright} from 'react-icons/io'
 import {HiOutlineCurrencyRupee} from 'react-icons/hi';
@@ -15,10 +15,10 @@ import {GiHamburgerMenu,GiSofa} from 'react-icons/gi'
 import {CgProfile} from 'react-icons/cg'
 import {AiFillCar,AiOutlineHome,AiFillBulb} from 'react-icons/ai'
 import {FaBuysellads,FaMobileAlt} from 'react-icons/fa'
-import {RiMotorbikeFill} from 'react-icons/ri'
+import {RiMotorbikeFill,RiAdminFill} from 'react-icons/ri'
 import {ChevronDownIcon} from '@chakra-ui/icons'
 import {Select,InputGroup,InputRightAddon,InputLeftAddon,Input,Button,Divider, Center,
-Drawer,DrawerBody,DrawerCloseButton,DrawerHeader,DrawerFooter,DrawerContent,useDisclosure,DrawerOverlay} from '@chakra-ui/react'
+Drawer,DrawerCloseButton,DrawerContent,useDisclosure,DrawerOverlay} from '@chakra-ui/react'
 
 
 export default function Navbar() {
@@ -92,11 +92,11 @@ export default function Navbar() {
             </div>
             <div className='navbar23'>
                 <div className='navbar231'>
-                    <div><CgProfile /></div>
-                    <p>Login/Register</p>
+                    <div><Link to='/login'><CgProfile /></Link></div>
+                    <p><Link to='/login'>Login/Register</Link></p>
                 </div>
                 <div className='navbar232'>
-                    <Button  colorScheme="yellow" borderRadius={'0px'}>Post Free Ad</Button>
+                    <Button  colorScheme="yellow" borderRadius={'0px'}>Admin Page</Button>
                 </div>
             </div>
         </div>
@@ -436,16 +436,16 @@ function DrawerExample() {
                 <div className='dBody'></div>
                 <div className="dbodyAll">
                 <div>
-                    <div><CgProfile /></div>
-                    <p>Login/Register</p>
+                    <div><Link to='/login'><CgProfile /></Link></div>
+                    <p><Link to='/login'>Login/Register</Link></p>
                 </div>
                 <div>
                     <div><BsPerson /></div>
                     <p>My Account</p>
                 </div>
                 <div>
-                    <div><MdOutlinePayment /></div>
-                    <p>Order & Payment</p>
+                    <div><RiAdminFill /></div>
+                    <p>Admin Page</p>
                 </div>
                 <div>
                     <div><FaBuysellads/></div>
