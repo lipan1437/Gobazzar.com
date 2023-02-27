@@ -13,6 +13,7 @@ import CreatePost from './Components/AdminPage/CreatePost';
 import Posts from './Components/AdminPage/Posts'
 import Admin from './Components/AdminPage/Admin';
 import User from './Components/AdminPage/User';
+import AdminDetail from './Components/AdminPage/AdminDetail';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path='/admin/posts' element={<Posts />} />
         <Route path="/admin" element={<Admin />} />
         <Route path='/admin/user' element={<User />} />
+        <Route path='admin/detail' element={<AdminDetail />} />
         <Route path="*" element={<h3>Page Not Found</h3>} />
         </Routes>
 

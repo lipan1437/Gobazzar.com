@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import BookCard from './BookCard'
 // import styles from "../../Styles.module.css"
 import styled from "styled-components"
-import { useLocation, useSearchParams } from 'react-router-dom'
+import { useLocation, useSearchParams,useNavigate } from 'react-router-dom'
 import { getBooks } from '../../Redux/Books/action'
 
 
@@ -13,8 +13,15 @@ const dispatch = useDispatch()
 const books = useSelector((store)=>store.bookReducer.books)
 const location = useLocation()
 const [searchParams] = useSearchParams();
+const value = localStorage.getItem("token");
+const navigate = useNavigate()
 
-console.log(location)
+if(!value){
+  navigate("/login") 
+}
+
+
+// console.log(location)
     useEffect(()=>{
       const order = searchParams.get("order")
         let paramObj= {

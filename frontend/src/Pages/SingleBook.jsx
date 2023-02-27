@@ -8,7 +8,7 @@ export default function SingleBook() {
   let {id} = useParams();
   const books = useSelector((store)=>store.bookReducer.books);
   const [book, setBook] = useState({})
-
+  
   // console.log(id)
   useEffect(()=>{
     let bookData = books.find((el)=>{

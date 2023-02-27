@@ -6,11 +6,8 @@ import SidebarWithHeader from './SidebarWithHeader'
 const Posts = () => {
     const [posts, setPosts] = useState([])
     const navigate = useNavigate()
-
-    const value = localStorage.getItem("admin");
-    if(value !== "adminPage"){
-      navigate("/admin")
-    }
+  
+    
     useEffect(()=>{
          fetch("https://alive-foal-long-johns.cyclic.app/posts",{
             headers:{
@@ -20,7 +17,13 @@ const Posts = () => {
          }).then(res=>res.json())
          .then(res=>{
             // console.log(res)
-            setPosts(res)
+            const value = localStorage.getItem("admin");
+            if(value){
+                  setPosts(res)
+            }
+            else{
+              navigate("/admin")
+            }
          })
          .catch(err=>console.log(err))
     },[posts])
