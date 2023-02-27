@@ -1,20 +1,16 @@
 ### IA ###
  - Venugopal Burli
 
-### Team Member Name ###
+### Team Members Name ###
 1.Lipan Padhan 
 2.Rittik Haldar  
 3.Sejal Jaiswal
 4.Bhairavnath Gotam
 5.Md Arif Ali
 
-
-## WORK 
- HOME PAGE,Footer - Ritik,
- NAVBAR and single Page - Sejal,
- LOGIN/SIGNUP - Md Arif,
- PRODUCT PAGE - Bhirav, 
- PRODUCT DETAILS PAGE - Lipan
+ 
+# GoBazzar.com 
+GoBazzar is E-commerce website where user can buy and sell  their products. It is collaborative project which is done by 5 days and Tech Stack we have used : HTML, CSS, JS, REACT, CHAKRA-UI, MONGODB etc.  
  
  
  Backend Link --> https://alive-foal-long-johns.cyclic.app/
