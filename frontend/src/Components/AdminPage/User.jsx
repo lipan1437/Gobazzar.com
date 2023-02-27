@@ -30,16 +30,18 @@ export default function User() {
            }
         }).then(res=>res.json())
         .then(res=>{
-        //    console.log(res)
-           setPosts(res)
+          const value = localStorage.getItem("admin");
+            if(value){
+                  setPosts(res)
+            }
+            else{
+              navigate("/admin")
+            }
         })
         .catch(err=>console.log(err))
    },[posts])
 
-   let value = localStorage.getItem("admin");
-   if(value){
-     navigate("/admin")
-   } 
+
   return (
     <>
     <SidebarWithHeader />
@@ -98,15 +100,15 @@ function SocialProfileWithImage({data}) {
           <Box p={6}>
             <Stack spacing={0} align={'center'} mb={5}>
               <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
-                {/* {data.name} */}
+               User
               </Heading>
-              <Text color={'gray.500'}>{data.name}</Text>
+              <Text color={'gray.500'}>Name : {data.name}</Text>
             </Stack>
   
             <Stack direction={'row'} justify={'center'} spacing={6}>
               <Stack spacing={0} align={'center'}>
                 <Text fontSize={'sm'} color={'gray.500'}>
-                  {data.email}
+                  Email : {data.email}
                 </Text>
               </Stack>
             </Stack>

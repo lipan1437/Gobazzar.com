@@ -33,7 +33,8 @@ import {
   FiMenu,
   FiBell,
   FiChevronDown,
-} from 'react-icons/fi';
+} from 'react-icons/fi'; 
+import{MdOutlineAdminPanelSettings} from  'react-icons/md'
 
 
 
@@ -41,8 +42,8 @@ const LinkItems = [
   { name: 'Home', icon: FiHome ,link:"/admin/posts"},
   { name: 'Inventory', icon: FiTrendingUp,link:"/admin/createPost" },
   { name: 'Users', icon: FiCompass ,link:"/admin/user"},
+  { name: 'Admin Detail', icon: MdOutlineAdminPanelSettings,link:"/admin/detail" },
   { name: 'Favourites', icon: FiStar },
-  { name: 'Settings', icon: FiSettings },
 ];
 
 export default function SidebarWithHeader({
