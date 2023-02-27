@@ -17,7 +17,7 @@ snapshot of  our website
 
  <div> 
  <h1>HOME PAGE</h1>
-    <img src="https://github.com/lipan1437/troubled-value-9978/blob/main/frontend/public/homepage.png">
+    <img src="C:\Users\Lipan Padhan\Desktop\troubled-value-9978\frontend\public\homepage.png">
  </div>
  
  
