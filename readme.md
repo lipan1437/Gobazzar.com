@@ -10,7 +10,7 @@
 
  
 # GoBazzar.com 
-GoBazzar is E-commerce website where user can buy and sell  their products. It is collaborative project which is done by 5 days and Tech Stack we have used : HTML, CSS, JS, REACT, CHAKRA-UI, MONGODB etc. 
+GoBazzar is E-commerce website where user can buy and sell  their products. It is collaborative project which is done by 5 days and Tech Stack we have used : HTML, CSS, JS, REACT, REDUX, CHAKRA-UI, MONGODB etc. 
 
  
   # Here is some snapshot our project 
