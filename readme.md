@@ -2,11 +2,11 @@
  - Venugopal Burli
 
 ### Team Members Name ###
-1.Lipan Padhan 
-2.Rittik Haldar  
-3.Sejal Jaiswal
-4.Bhairavnath Gotam
-5.Md Arif Ali
+- Lipan Padhan 
+- Rittik Haldar  
+- Sejal Jaiswal
+- Bhairavnath Gotam
+- Md Arif Ali
 
  
 # GoBazzar.com 
