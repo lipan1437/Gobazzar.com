@@ -27,21 +27,13 @@ GoBazzar.com is a clone website of Quickerbazzar.com. It is a E-commerce website
 
  <div>
   <h2> Admin page </h2>
- <img src="https://cdn-images-1.medium.com/max/1000/1*hZUSuoLGvQYOnfQfIX5t0g.jpeg">
+ <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*PfzPPoN-CZhmdN_Pv-j47g.png">
  <div>
 
  <div>
   <h2> Single page </h2>
  <img src="https://cdn-images-1.medium.com/max/1000/1*gH35OKPLB1uS0CEfCgH_kw.jpeg">
  <div>
- 
-  <!-- # admin page
-  https://cdn-images-1.medium.com/max/1000/1*NEgTkQLC4QG4M3LjQXWAuA.jpeg
- 
- # homepage
- https://cdn-images-1.medium.com/max/1000/1*hZUSuoLGvQYOnfQfIX5t0g.jpeg
+ <br/> 
 
-# single page
-https://cdn-images-1.medium.com/max/1000/1*gH35OKPLB1uS0CEfCgH_kw.jpeg
-  -->
  Backend Link --> https://alive-foal-long-johns.cyclic.app/
